@@ -1,13 +1,70 @@
-# Sample Hardhat Project
+#About
+Arfhe Wallet is an innovative digital wallet application that uses Fully Homomorphic Encryption (FHE) technology to enable secure storage and transfer of cryptographic assets. Our goal is to harness the groundbreaking capabilities of FHE to ensure that all transactions and storage processes are not only secure from external threats but also preserve privacy to the maximum extent possible.
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+Features
+Secure Asset Storage: Encrypt and store your crypto assets using FHE, ensuring that your data remains private and tamper-proof.
 
-Try running some of the following tasks:
+Private Transactions: Perform transactions where the details are encrypted end-to-end, providing absolute privacy.
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
-```
+Multi-Currency Support: Supports a wide range of cryptocurrencies and tokens, making it a versatile wallet for diverse users.
+
+User-Friendly Interface: Designed with simplicity in mind, ensuring ease of use for both beginners and experienced users.
+
+Scalable Architecture: Built to efficiently handle increasing loads and transaction volumes without compromising security.
+
+Why FHE?
+
+Fully Homomorphic Encryption allows computation on encrypted data, enabling the Arfhe Wallet to execute transactions and manage balances without ever exposing the actual data. 
+This level of security is crucial in the landscape of digital assets, where exposure of sensitive financial information can lead to significant losses.
+
+Getting Started
+To get started with Arfhe Wallet, follow these steps:
+
+Clone the repository:
+
+bash
+
+Copy code
+
+git clone https://github.com/justbiar/arfhe-wallet.git
+
+Navigate to the project directory:
+
+bash
+
+cd arfhe-wallet 
+
+Install dependencies:
+
+bash
+
+npm install
+
+Run the application:
+
+bash
+
+npm start
+
+Contribution
+
+Contributions are welcome! If you'd like to help improve Arfhe Wallet, please fork the repository and submit a pull request with your proposed changes.
+
+Fork the Project: Fork it to your own GitHub account.
+
+Create your Feature Branch: git checkout -b feature/AmazingFeature
+
+Commit your Changes: git commit -m 'Add some AmazingFeature'
+
+Push to the Branch: git push origin feature/AmazingFeature
+
+Open a Pull Request
+
+
+License
+
+Distributed under the MIT License. See LICENSE for more information.
+
+Contact
+justbiar - selfbiar@gmailü.com
+Project Link: https://www.arfdao.com/s-projects-side-by-side
