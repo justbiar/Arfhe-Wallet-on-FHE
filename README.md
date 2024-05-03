@@ -68,5 +68,7 @@ License
 Distributed under the MIT License.
 
 Contact
-justbiar - selfbiar@gmailü.com
+
+justbiar - selfbiar@gmail.com
+
 Project Link: https://www.arfdao.com/s-projects-side-by-side
