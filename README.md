@@ -1,5 +1,7 @@
 #About
-Arfhe Wallet is an innovative digital wallet application that uses Fully Homomorphic Encryption (FHE) technology to enable secure storage and transfer of cryptographic assets. Our goal is to harness the groundbreaking capabilities of FHE to ensure that all transactions and storage processes are not only secure from external threats but also preserve privacy to the maximum extent possible.
+
+Arfhe Wallet is an innovative digital wallet application that uses Fully Homomorphic Encryption (FHE) technology to enable secure storage and transfer of cryptographic assets. 
+Our goal is to harness the groundbreaking capabilities of FHE to ensure that all transactions and storage processes are not only secure from external threats but also preserve privacy to the maximum extent possible.
 
 Features
 Secure Asset Storage: Encrypt and store your crypto assets using FHE, ensuring that your data remains private and tamper-proof.
