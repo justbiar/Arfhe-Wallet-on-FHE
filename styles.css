@@ -193,7 +193,7 @@ linear-gradient(180deg, rgba(255, 183, 153, 0.4) 0%, rgba(253, 186, 162, 0.4) 32
     width: 61px;           /* Genişlik */
     height: 61px;          /* Yükseklik */
     border-radius: 50%; 
-    background-image: url('nft-monkey.jpg'); 
+    background-image: url('images/nft-monkey.jpg'); 
     background-size: cover;
     position: fixed;
     top: 60px;
@@ -381,65 +381,8 @@ z-index: 1;
     
 }
 
-.circle-button-deposit {
-    width: 40px;
-    height: 40px;
-    background-color: #ff3c00; /* Yeşil arkaplan */
-    border-radius: 50%; /* Daireyi oluştur */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    position: fixed;
-    top: 175px;
-    left: 270px;
-    z-index: 1;
-    border: 1px solid black;
-}
-.circle-button-withdraw {
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 124, 69, 1);
-    ; /* Yeşil arkaplan */
-    border-radius: 50%; /* Daireyi oluştur */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    position: fixed;
-    top: 175px;
-    left: 50px;
-    z-index: 2;
-    border: 1px solid black;
-}
-
 .circle-button:hover {
     background-color: #45a049; /* Düğme üzerine gelindiğinde renk değişimi */
-}
-
-.arrow-up, .arrow-down {
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    z-index: 2;
-}
-
-.arrow-up {
-    border-bottom: 10px solid white; /* Yukarı ok */
-    z-index: 1;
-    position: absolute;
-    top: 15px;
-    left: 15px;
-
-}
-
-.arrow-down {
-    border-top:10px solid white; /* Aşağı ok */
-    z-index: 1;
-    position: absolute;
 }
 
 .circle1 {
