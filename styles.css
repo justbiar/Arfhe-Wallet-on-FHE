@@ -1,6 +1,6 @@
 body, html {
     font-family: Arial, sans-serif;
-    width: 100%;;
+    width: 360px;;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -67,7 +67,7 @@ linear-gradient(180deg, rgba(255, 183, 153, 0.4) 0%, rgba(253, 186, 162, 0.4) 32
     height: 70%;
     background: linear-gradient(50deg, rgba(255, 183, 153, 0.7) 100%, rgba(253, 186, 162, 0.7) 100%, rgba(231, 220, 255, 0.7) 100%);
     
-    z-index: 1000;
+    z-index: 500;
     border-radius: 23px;
     
     
@@ -118,6 +118,7 @@ linear-gradient(180deg, rgba(255, 183, 153, 0.4) 0%, rgba(253, 186, 162, 0.4) 32
     left: 15px;
     z-index: -1;
 }
+/* Varlık ve network için arka plan */
 
 .kutucuk {
     width: 330px;
@@ -231,11 +232,12 @@ linear-gradient(180deg, rgba(255, 183, 153, 0.4) 0%, rgba(253, 186, 162, 0.4) 32
     z-index: 1;
 
 }
+/* Networklerin olduğu butun */
 
 .dropdown {
     position: fixed;
     top: 125px;
-    left: 110px;
+    left: 100px;
     display: inline-block;
     z-index: 2;
   }

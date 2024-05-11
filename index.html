@@ -4,11 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arfhe Wallet</title>
+    
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="login.css">
+   
 </head>
 <body>
-    <div class="popup-content">
+
+    
+    <div id="login-Area">
+        <h2>Arfhe Wallet</h2>
+        <input type="password" id="newPassword" placeholder="Yeni Parola">
+        <input type="password" id="confirmPassword" placeholder="Parolayı Doğrula">
+        <button id="setPasswordButton">Parola Belirle</button>
+        <input type="password" id="password" placeholder="Parolanızı Giriniz">
+        <button id="loginButton" style="display:none;">Giriş Yap</button>
+    </div>
+    
+    <!-- Ana İçerik -->
+    <div id="mainContent" style="display:none;">
+        
+        <div class="popup-content">
    
         </div>
 
@@ -26,12 +42,15 @@
                 <li>Settings</li>
                 <li>Support</li>
                 <li>View on explorer</li>
+                
+
             </ul>
+            <button id="resetPasswordButton">Parolayı Sıfırla</button>
         </div>
     
 
     
-    <div class="wallet-container">
+        <div class="wallet-container">
         <div class="wallet-header">
             
         </div>
@@ -89,12 +108,7 @@
             <img src="images/ethcoin.png">
 
 
-    </div>
-
-
-
-
-
+         </div>
         <div class="kutucuk"></div>
         <div class="wallet-app">
             <div class="logo">
@@ -131,7 +145,12 @@
             </div>
             
         </div>
+        </div>
+
     </div>
+
+    <script src="login.js"></script>
     <script src="script.js"></script>
+    
 </body>
 </html>
