@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "ethers": "^6.12.1",
+    "fhevm": "^0.4.0",
     "web3": "^4.8.0"
   },
   "devDependencies": {
