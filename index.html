@@ -4,29 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arfhe Wallet</title>
-    
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="login.css">
-   
 </head>
 <body>
 
-    
-    <div id="login-Area">
-        <h2>Arfhe Wallet</h2>
-        <input type="password" id="newPassword" placeholder="Yeni Parola">
-        <input type="password" id="confirmPassword" placeholder="Parolayı Doğrula">
-        <button id="setPasswordButton">Parola Belirle</button>
-        <input type="password" id="password" placeholder="Parolanızı Giriniz">
-        <button id="loginButton" style="display:none;">Giriş Yap</button>
-    </div>
-    
+    <nav>
+        <ul>
+            <a href="index.html"></a>
+            <a id="walletLink" href="#">Çıkış</a>
+            <!-- Diğer sayfalar -->
+        </ul>
+    </nav>
+
     <!-- Ana İçerik -->
     <div id="mainContent" style="display:none;">
-        
-        <div class="popup-content">
-   
-        </div>
+        <div class="popup-content"></div>
 
         <div id="menuButton" class="menu-icon">
             <span></span>
@@ -40,116 +32,88 @@
             <ul class="menu-items">
                 <li>Connected dapps</li>
                 <li>Settings</li>
+                <li>Settings
+                    <ul>
+                        <li><button id="resetPasswordButton">Parolayı Sıfırla</button></li>
+                        <li><button id="resetWalletButton">Cüzdanı Sıfırla</button></li>
+                    </ul>
+                </li>
                 <li>Support</li>
                 <li>View on explorer</li>
-                
-
             </ul>
-            <button id="resetPasswordButton">Parolayı Sıfırla</button>
+           
         </div>
-    
 
-    
         <div class="wallet-container">
-        <div class="wallet-header">
-            
-        </div>
-        <div class="para-degeri">
+            <div class="wallet-header"></div>
+            <div class="para-degeri">
                 <h1>1,000,000$</h1>
-
-
-        </div>
-
-    
-
-
-        <div class="dropdown">
-          <button id="dropbtn" class="dropbtn">Network</button>
-          <div id="myDropdown" class="dropdown-content">
-            <a href="#">ArfhEVM</a>
-            <a href="#">Zama</a>
-            <a href="#">Ethereum</a>
-            <a href="#">+ Add Network</a>
-          </div>
-        </div>
-        </body>
-        </html>
-        
-          <div class="assets-coin"> 
-            <h1>Assets</h1>
-
-
-          </div>
-
-
-        <div class="colorful-shape"></div>
-        <div class="gradient-box"></div>
-
-        <div class="wallet-container">
-            <!-- Cüzdan içeriği buraya gelecek -->
-            <div class="varliklar">
-        </div>
-        <div class="coin-kolon1"></div>
-        <div class="coin-kolon2"></div>
-        <div class="coin-kolon3"></div>
-        <div class="coin-kolon4"></div>
-        <div class="coin-kolon5"></div>
-        <div class="coin-kolon6"></div>
-        <div class="coin-kolon7"></div>
-        <div class="gradient-box-account"></div>
-
-        <div class="arfcoin">
-                <img src="images/arfcoin.png" alt="Arfcoin">
-    
-
-        </div>
-
-        <div class="ethcoin">
-            <img src="images/ethcoin.png">
-
-
-         </div>
-        <div class="kutucuk"></div>
-        <div class="wallet-app">
-            <div class="logo">
-
-                <img src="images/icon48.png" alt="Logo">
             </div>
 
-            <div class="circle1"></div>
-            <div class="circle2"></div>
-            <div class="circle3"></div>
-            <div class="circle4"></div>
-            <div class="circle5"></div>
-            <div class="circle6"></div>
-            <div class="network-button"></div>
-
-            <div class="nft-profile"> </div>
-           
-            <div class="hesap-adi">Hesap Adı</div>
-            <div class="adres">Biar.arf</div>
-
-                
-
-            <div class="button-container">
-                <div class="circle-button-deposit">
-                    <div class="arrow-up"></div>
+            <div class="dropdown">
+                <button id="dropbtn" class="dropbtn">Network</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">ArfhEVM</a>
+                    <a href="#">Zama</a>
+                    <a href="#">Ethereum</a>
+                    <a href="#">+ Add Network</a>
                 </div>
-                <div class="circle-button-withdraw">
-                    <div class="arrow-down"></div>
-                    
-        <div class="wallet-body">
-           
-            
-                
             </div>
-            
-        </div>
-        </div>
 
+            <div class="assets-coin">
+                <h1>Assets</h1>
+            </div>
+
+            <div class="colorful-shape"></div>
+            <div class="gradient-box"></div>
+
+            <div class="wallet-container">
+                <div class="varliklar"></div>
+                <div class="coin-kolon1"></div>
+                <div class="coin-kolon2"></div>
+                <div class="coin-kolon3"></div>
+                <div class="coin-kolon4"></div>
+                <div class="coin-kolon5"></div>
+                <div class="coin-kolon6"></div>
+                <div class="coin-kolon7"></div>
+                <div class="gradient-box-account"></div>
+
+                <div class="arfcoin">
+                    <img src="images/arfcoin.png" alt="Arfcoin">
+                </div>
+
+                <div class="ethcoin">
+                    <img src="images/ethcoin.png" alt="Ethereum">
+                </div>
+                <div class="kutucuk"></div>
+                <div class="wallet-app">
+                    <div class="logo">
+                        <img src="images/icon48.png" alt="Logo">
+                    </div>
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                    <div class="circle5"></div>
+                    <div class="circle6"></div>
+                    <div class="network-button"></div>
+                    <div class="nft-profile"></div>
+                    <div class="hesap-adi">Hesap Adı</div>
+                    <div class="adres">Biar.arf</div>
+                    <div class="button-container">
+                        <div class="circle-button-deposit">
+                            <div class="arrow-up"></div>
+                        </div>
+                        <div class="circle-button-withdraw">
+                            <div class="arrow-down"></div>
+                        </div>
+                        <div class="wallet-body"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <script src="login.js"></script>
     <script src="script.js"></script>
     
 </body>
