@@ -1,42 +1,32 @@
-// create_wallet.js
+function generateRandomWord() {
+    const words = [
+        "apple", "banana", "cherry", "date", "elderberry", "fig", "grape", "honeydew",
+        "kiwi", "lemon", "mango", "nectarine", "orange", "papaya", "quince", "raspberry",
+        "strawberry", "tangerine", "ugli", "vanilla", "watermelon", "xigua", "yam", "zucchini"
+    ];
+    return words[Math.floor(Math.random() * words.length)];
+}
 
-document.addEventListener('DOMContentLoaded', () => {
+function generateRandomWords(num) {
+    const wordSet = new Set();
+    while (wordSet.size < num) {
+        wordSet.add(generateRandomWord());
+    }
+    return Array.from(wordSet);
+}
+
+function displayRandomWords() {
     const seedWordsContainer = document.getElementById('seedWordsContainer');
     const words = generateRandomWords(12);
-    words.forEach((word, index) => {
-        const wordElement = document.createElement('div');
-        wordElement.classList.add('input-group');
-        wordElement.innerHTML = `
-            <label for="word${index + 1}">Kelime ${index + 1}:</label>
-            <input type="text" id="word${index + 1}" value="${word}" readonly>
-        `;
-        seedWordsContainer.appendChild(wordElement);
+    
+    words.forEach(word => {
+        const wordDiv = document.createElement('div');
+        wordDiv.className = 'grid-item';
+        wordDiv.textContent = word;
+        seedWordsContainer.appendChild(wordDiv);
     });
-
-    document.getElementById('walletForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        
-        const password = document.getElementById('password').value;
-        if (password) {
-            // Save seed words and password to localStorage
-            localStorage.setItem('seedWords', JSON.stringify(words));
-            localStorage.setItem('walletPassword', password);
-            alert('Cüzdan başarıyla oluşturuldu!');
-
-            // Redirect to login page
-            window.location.href = '../login.html';
-        } else {
-            alert('Lütfen bir şifre belirleyin.');
-        }
-    });
-});
-
-function generateRandomWords(count) {
-    const wordList = ["apple", "banana", "cat", "dog", "elephant", "frog", "grape", "house", "ice", "jacket", "kangaroo", "lemon"];
-    const selectedWords = [];
-    for (let i = 0; i < count; i++) {
-        const randomIndex = Math.floor(Math.random() * wordList.length);
-        selectedWords.push(wordList[randomIndex]);
-    }
-    return selectedWords;
 }
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    displayRandomWords();
+});
