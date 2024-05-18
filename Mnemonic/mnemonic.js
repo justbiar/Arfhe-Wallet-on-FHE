@@ -17,6 +17,7 @@ function generateRandomWords(num) {
 
 function displayRandomWords() {
     const seedWordsContainer = document.getElementById('seedWordsContainer');
+    seedWordsContainer.innerHTML = ''; // Clear previous words if any
     const words = generateRandomWords(12);
     
     words.forEach(word => {
@@ -29,4 +30,16 @@ function displayRandomWords() {
 
 document.addEventListener('DOMContentLoaded', (event) => {
     displayRandomWords();
+
+    document.getElementById('walletForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const password = document.getElementById('password').value;
+        if (password.trim() === "") {
+            alert('Lütfen bir şifre girin.');
+            return;
+        }
+        localStorage.setItem('walletPassword', password); // Save password to localStorage
+        alert('Cüzdan başarıyla oluşturuldu!');
+        window.location.href = '../login.html'; // Redirect to login page
+    });
 });
