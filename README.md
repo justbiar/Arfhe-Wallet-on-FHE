@@ -20,6 +20,13 @@ Fully Homomorphic Encryption allows computation on encrypted data, enabling the 
 This level of security is crucial in the landscape of digital assets, where exposure of sensitive financial information can lead to significant losses.
 
 Getting Started
+
+Docker set up for fhEVM
+
+```
+docker run -i -p 8545:8545 -p 8546:8546 --rm --name fhevm ghcr.io/zama-ai/ethermint-dev-node:v0.4.2
+```
+
 To get started with Arfhe Wallet, follow these steps:
 
 Clone the repository:
@@ -27,27 +34,27 @@ Clone the repository:
 bash
 
 Copy code
-
+```
 git clone https://github.com/justbiar/arfhe-wallet.git
-
+```
 Navigate to the project directory:
 
-bash
 
+```
 cd arfhe-wallet 
-
+```
 Install dependencies:
 
-bash
 
+```
 npm install
-
+```
 Run the application:
 
-bash
 
+```
 npm start
-
+```
 Contribution
 
 Contributions are welcome! If you'd like to help improve Arfhe Wallet, please fork the repository and submit a pull request with your proposed changes.
