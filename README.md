@@ -1,4 +1,4 @@
-##About
+## About
 
 Arfhe Wallet is an innovative digital wallet application that uses Fully Homomorphic Encryption (FHE) technology to enable secure storage and transfer of cryptographic assets. 
 Our goal is to harness the groundbreaking capabilities of FHE to ensure that all transactions and storage processes are not only secure from external threats but also preserve privacy to the maximum extent possible.
@@ -26,6 +26,8 @@ Docker set up for fhEVM
 ```
 docker run -i -p 8545:8545 -p 8546:8546 --rm --name fhevm ghcr.io/zama-ai/ethermint-dev-node:v0.4.2
 ```
+## Code samples:
+https://docs.zama.ai/fhevm/guides/webapp
 
 To get started with Arfhe Wallet, follow these steps:
 
