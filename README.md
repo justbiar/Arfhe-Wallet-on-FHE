@@ -29,6 +29,7 @@ docker run -i -p 8545:8545 -p 8546:8546 --rm --name fhevm ghcr.io/zama-ai/etherm
 ## Code samples:
 https://docs.zama.ai/fhevm/guides/webapp
 
+## Introduction
 To get started with Arfhe Wallet, follow these steps:
 
 Clone the repository:
@@ -72,11 +73,11 @@ Push to the Branch: git push origin feature/AmazingFeature
 Open a Pull Request
 
 
-License
+## License
 
 Distributed under the MIT License.
 
-Contact
+## Contact
 
 justbiar - selfbiar@gmail.com
 
