@@ -35,7 +35,7 @@ To get started with Arfhe Wallet, follow these steps:
 Clone the repository:
 
 bash
-
+# With WSL 
 Copy code
 ```
 git clone https://github.com/justbiar/arfhe-wallet.git
