@@ -1,20 +1,20 @@
 body, html {
     font-family: Arial, sans-serif;
-    width: 360px;;
-    height: 100%;
+    width: 360px;
+    height: 575px;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #FFB79966, #FDBAA266, #E7DCFF66);
+    background: linear-gradient(to right, #ff4d0066, #FDBAA266, #E7DCFF66);
     border-radius: 21px;
+    
   
 }
 
 .wallet-container {
     width: 280px;
-    height: 480px;
+    height: 100%;
     background: linear-gradien
-linear-gradient(180deg, rgba(255, 183, 153, 0.4) 0%, rgba(253, 186, 162, 0.4) 32.5%, rgba(231, 220, 255, 0.4) 71%);
-    ;
+linear-gradient(180deg, rgba(255, 183, 153, 0.4) 0%, rgba(253, 186, 162, 0.4) 32.5%, rgba(231, 220, 255, 0.4) 71%);;
     border-radius: 50px;
     padding: 40px;
     z-index: -1;
@@ -457,4 +457,58 @@ z-index: 1;
     position: fixed;
     top: 537px;
     left: 25px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.exit-button {
+    position: fixed;
+    left: 85%;
+    top: 0.2%;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.exit-button::before, .exit-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    transition: all 0.3s;
+}
+
+.exit-button::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.exit-button::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.exit-button:hover::before {
+    transform: translate(-50%, -50%) rotate(0) translateX(-10px);
+}
+
+.exit-button:hover::after {
+    transform: translate(-50%, -50%) rotate(0) translateX(10px);
+}
+
+.exit-button:hover {
+    background-color: linear-gradient(to right, #FFB799, #D8A5C6, #A998CD); /* Üç renkli gradyan */
 }
