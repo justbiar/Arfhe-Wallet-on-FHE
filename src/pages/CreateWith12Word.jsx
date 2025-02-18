@@ -1,23 +1,29 @@
-import { useState } from 'react'
+import React from "react";
+import "./CreateWith12Word.css";
+import ImportWalletButton from "../components/Importwalletbutton";
 
-
-function App() {
-  const [count, setCount] = useState(0)
-  
+const CreateWith12Word = () => {
+  const words = [
+    "aydan", "devin", "kang", "sabak", "crack", "orga",
+    "ming", "san", "balaban", "orgun", "babat", "edil"
+  ];
 
   return (
-    <>
     <div className="app-container">
-      <div className='header'>
-      <h1 className="app-title">12 Kelime Burada Çıkacak</h1>
+      <div className="card">
+        <h2 className="header">📱 12 Kelime</h2>
+        <div className="word-container">
+          {words.map((word, index) => (
+            <div key={index} className="word-box">
+              {index + 1}. {word}
+            </div>
+          ))}
+        </div>
+        <ImportWalletButton />
+        <button className="back-button">Geri</button>
       </div>
-      </div>
+    </div>
+  );
+};
 
-      
-
-
-    </>
-  )
-}
-
-export default App
+export default CreateWith12Word;
