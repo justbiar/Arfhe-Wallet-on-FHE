@@ -1,24 +1,64 @@
-.privatekey-input {
-    width: 340px;
-    height: 40px;
-    background-color: #F3F4F6;
-    border: 2px solid #003C9D;
-    border-radius: 23.5px;
-    font-size: 16px;
-    padding: 10px;
-    outline: none;
-  }
+.app-container {
+  width: 393px;
+  height: 814px;
+  background-color: #F3F4F6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 43px;
+}
 
-  .seed-input {
-    width: 340px;
-    height: 40px;
-    background-color: #F3F4F6;
-    border: 2px solid #003C9D;
-    border-radius: 23.5px;
-    font-size: 16px;
-    padding: 10px;
-    outline: none;
-    margin: 20px auto;
-  }
-  
-  
+.mnemonic-container {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.copy-button {
+  position: absolute;
+  top: -25px;
+  left: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.mnemonic-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.mnemonic-box {
+  width: 359px;
+  background-color: #1E3A8A;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: Inter;
+}
+
+.mnemonic-word {
+  width: 30%;
+  text-align: left;
+}
+
+.wallet-button, .back-button {
+  width: 200px;
+  height: 40px;
+  background-color: #1E3A8A;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.wallet-button:hover, .back-button:hover {
+  background-color: #162d6a;
+}

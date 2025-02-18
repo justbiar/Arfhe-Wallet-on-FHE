@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import './FirstLogin.css'
+import Createwalletbutton from '../components/Createwalletbutton'
+import Importwalletbutton from '../components/Importwalletbutton'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -7,6 +9,7 @@ function App() {
 
   return (
     <>
+    
     <div className="app-container">
       <div className='header'>
       <h1 className="app-title">Arfhe Wallet</h1>
@@ -16,8 +19,9 @@ function App() {
       </div>
 
       <div className='content'>
-        <button className='create-wallet-button'>Cüzdan Oluştur</button>
-        <button className='import-wallet-button'>İçe Aktar</button>
+       
+        <Importwalletbutton />
+        <Createwalletbutton />
       </div>
     </div>
 
