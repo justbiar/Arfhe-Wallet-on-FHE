@@ -15,6 +15,9 @@ import Revoke from './pages/Revoke'
 import Sending from './pages/Sending'
 import Swap from './pages/Swap'
 import ImportWallet from './pages/ImportWallet'
+import CreateWith12Word from './pages/CreateWith12Word'
+import CreateWith24Word from './pages/CreateWith24Word'
+
 
 
 function App() {
@@ -35,6 +38,8 @@ function App() {
         <Route path='/sending' element={<Sending/>} exact/>
         <Route path='/swap' element={<Swap/>} exact />
         <Route path='/importwallet' element={<ImportWallet/>} exact />
+        <Route path='/createwith12' element={<CreateWith12Word/>} exact />
+        <Route path='/createwallet/createwith24' element={<CreateWith24Word/>} exact />
 
       </Routes>
     </div>

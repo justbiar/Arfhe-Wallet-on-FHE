@@ -3,62 +3,66 @@
   height: 814px;
   background-color: #F3F4F6;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column; /* İçerikleri dikey hizala */
+  align-items: center; /* Yatayda ortala */
+  justify-content: center; /* Dikeyde ortala */
   border-radius: 43px;
 }
 
-.mnemonic-container {
-  position: relative;
-  text-align: center;
-  margin-bottom: 20px;
+.header {
+  flex-direction: column;
 }
 
-.copy-button {
-  position: absolute;
-  top: -25px;
-  left: 10px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-.mnemonic-title {
-  font-weight: bold;
-  margin-bottom: 5px;
-  display: block;
-}
-
-.mnemonic-box {
-  width: 359px;
-  background-color: #1E3A8A;
-  color: white;
-  border-radius: 10px;
-  padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  font-family: Inter;
-}
-
-.mnemonic-word {
-  width: 30%;
-  text-align: left;
-}
-
-.wallet-button, .back-button {
+.app-logo {
   width: 200px;
-  height: 40px;
-  background-color: #1E3A8A;
-  color: white;
-  border-radius: 10px;
-  border: none;
-  margin-top: 10px;
-  cursor: pointer;
+  height: auto;
+  margin-left: 5%;
+  margin-bottom: 50px;
 }
 
-.wallet-button:hover, .back-button:hover {
-  background-color: #162d6a;
+.app-title {
+  color: #333;
+  text-align: center;
+  margin: 0;
+}
+
+.content {
+  text-align: center;
+  margin-top: 75px;/* Yazıyı logodan biraz aşağı al */
+}
+
+.create-wallet-button {
+  width: 215px;
+  height: 39.1px;
+  background-color: #003C9D;
+  border: none;
+  border-radius: 23.5px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600; /* Semi-Bold */
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+.create-wallet-button:hover {
+  background-color: #002F7A;
+}
+
+.import-wallet-button {
+  width: 215px;
+  height: 39.1px;
+  background-color: #003C9D;
+  border: none;
+  border-radius: 23.5px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600; /* Semi-Bold */
+  margin-bottom: 75px;
+  transition: background-color 0.3s ease;
+  margin: 20px auto;
+}
+.import-wallet-button:hover {
+  background-color: #002F7A;
 }
