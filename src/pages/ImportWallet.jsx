@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './ImportWallet.css'
+import Importwalletbutton2 from '../components/Loginimportwalletbutton'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -28,8 +29,13 @@ function App() {
       placeholder="Gizli Anahtarı Giriniz"
     />
 
-        <button className='import-wallet-button'>İçe Aktar</button>
+        
       </div>
+      <div className='content'>
+       
+       <Importwalletbutton2 />
+     </div>
+
     </div>
 
     </>
