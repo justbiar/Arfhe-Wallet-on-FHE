@@ -3,12 +3,17 @@ import { useNavigate } from "react-router-dom";
 import App from "../App";
 import './Createwith24word.css'
 
-const 
-function CreateWith24Word(){
+function CreateWith24Word (){
+     const navigate = useNavigate();
+
 return (
     <div>
-        <Link to='createwith24'>
-<button className='create-24-button'>24 Kelime İle Oluştur</button></Link>
+        
+<button className='create-24-button'
+onClick={() => {
+    navigate('/createwallet/createwith24')
+}}
+>24 Kelime İle Oluştur</button>
     </div>
 )
 

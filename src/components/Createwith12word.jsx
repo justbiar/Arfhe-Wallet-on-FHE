@@ -1,13 +1,19 @@
 import React from "react"; 
-import { Link } from "react-router";
+import { useNavigate } from "react-router-dom";
 import App from "../App";
 import './Createwith12word.css'
 
-function CreateWith12Word(){
+function CreateWith12Word (){
+     const navigate = useNavigate();
+
 return (
     <div>
-        <Link to='/createwallet/createwith12'>
-<button className='create-12-button'>12 Kelime İle Oluştur</button></Link>
+        
+<button className='create-12-button'
+onClick={() => {
+    navigate('/createwallet/createwith12')
+}}
+>12 Kelime İle Oluştur</button>
     </div>
 )
 
