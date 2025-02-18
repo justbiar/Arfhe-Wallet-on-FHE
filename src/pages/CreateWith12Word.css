@@ -55,4 +55,40 @@ body{
     
   }
   
+  /* Butonlar */
+.create-button{
+  margin-top: 12px;
+  width: 215px;
+  height: 39.1px;
+  background-color: #003C9D;
+  border: none;
+  border-radius: 23.5px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600; /* Semi-Bold */
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+.back-button {
   
+  margin-top: 6px;
+  width: 215px;
+  height: 39.1px;
+  background-color: #003C9D;
+  border: none;
+  border-radius: 23.5px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600; /* Semi-Bold */
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.create-button:hover,
+.back-button:hover {
+  background-color: #091a5d;
+}

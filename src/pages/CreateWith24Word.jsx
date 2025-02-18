@@ -1,23 +1,28 @@
-import { useState } from 'react'
+import React from "react";
+import "./CreateWith24Word.css";
 
-
-function App() {
-  const [count, setCount] = useState(0)
-  
+const CreateWith24Word = () => {
+  const words = [
+    "aydan", "devin", "kang", "sabak", "crack", "orga", "ming", "san", "balaban", "orgun", "babat", "edil",
+    "motun", "kelgin", "guna", "salaman", "azboy", "otgun", "oybat", "kuzu", "koyu", "kiyal", "ilgi", "otkun"
+  ];
 
   return (
-    <>
-    <div className="app-container">
-      <div className='header'>
-      <h1 className="app-title">24 Kelime Burada Olacak</h1>
+    <div className="container">
+      <div className="card">
+        <h2 className="header"> 24 Kelime</h2>
+        <div className="word-container">
+          {words.map((word, index) => (
+            <div key={index} className="word-box">
+              {index + 1}. {word}
+            </div>
+          ))}
+        </div>
+        <button className="create-button">Cüzdan Oluştur</button>
+        <button className="back-button">Geri</button>
       </div>
-      </div>
+    </div>
+  );
+};
 
-      
-
-
-    </>
-  )
-}
-
-export default App
+export default CreateWith24Word;
