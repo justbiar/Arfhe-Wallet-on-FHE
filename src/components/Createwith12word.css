@@ -12,3 +12,18 @@
     justify-content: center;
     transition: background-color 0.3s ease;
 }
+
+.create-to-import-button {
+    width: 215px;
+    height: 39.1px;
+    background-color: #003C9D;
+    border: none;
+    border-radius: 23.5px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600; /* Semi-Bold */
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}

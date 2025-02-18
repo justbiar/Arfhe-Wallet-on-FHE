@@ -19,4 +19,4 @@ onClick={() => {
 
 }
 
-export default CreateWith12Word
+export default CreateWith12Word 

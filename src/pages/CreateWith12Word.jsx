@@ -1,6 +1,7 @@
 import React from "react";
 import "./CreateWith12Word.css";
-import ImportWalletButton from "../components/Importwalletbutton";
+import CreateWith12toImport from "../components/CreateWith12toImport";
+import BackButton from "../components/BackButton";
 
 const CreateWith12Word = () => {
   const words = [
@@ -19,8 +20,8 @@ const CreateWith12Word = () => {
             </div>
           ))}
         </div>
-        <ImportWalletButton />
-        <button className="back-button">Geri</button>
+        <CreateWith12toImport />
+        <BackButton />
       </div>
     </div>
   );
