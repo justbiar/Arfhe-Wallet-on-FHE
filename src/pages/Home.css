@@ -13,23 +13,34 @@
   
   /* Üst Kısım */
   .top-section {
-    width: 100%;
-    height: 10%;
+    width: 359px;
+    height: 38.9px;
     text-align: center;
     background-color: #0D247C;
     color: white;
     padding: 10px;
-    border-radius: 12px;
+    border-radius: 21px;
     position: relative;
   }
   
   .account-title {
+    
+    
+    display: flex;
+    justify-self: center;
     font-size: 16px;
     font-weight: bold;
+
+    position: absolute;
+    top: 0%;
+    right: 44%;
   }
   
   .account-name {
     font-size: 14px;
+    position: absolute;
+    top: 20px;
+    right: 45%;
   }
   
   .network-badge {
@@ -40,6 +51,9 @@
     display: inline-block;
     margin-top: 5px;
     cursor: pointer;
+    position: absolute;
+    top: 60px;
+    right: 32.5%;
   }
   
   .network-name {

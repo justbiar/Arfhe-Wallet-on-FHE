@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './Receiving.css'
 import React from 'react'
+import Bottommenu from "../components/Bottommenu";
 
 const Receiving = () => {
   return (
@@ -25,13 +26,9 @@ const Receiving = () => {
         0xa25g5de5g451vvvd75q5frru5kdf5h5lDhrr
       </div>
 
-      {/* Alt Menü */}
-      <div className="bottom-menu">
-        <button className="menu-btn">🏠</button>
-        <button className="menu-btn">📊</button>
-        <button className="menu-btn">🔁</button>
-        <button className="menu-btn">🔍</button>
-      </div>
+      <Bottommenu />
+      
+    
     </div>
   );
 };

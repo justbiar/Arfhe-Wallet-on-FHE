@@ -3,6 +3,7 @@ import './Home.css'
 import React from "react";
 import Homesendbutton from '../components/Homesendbutton';
 import Homereceivebutton from '../components/Homereceivingbutton';
+import Bottommenu from "../components/Bottommenu";
 
 
 const Home = () => {
@@ -48,13 +49,8 @@ const Home = () => {
         <div className="asset-item">1 SOL</div>
       </div>
 
-      {/* Alt Menü */}
-      <div className="bottom-menu">
-        <button className="menu-btn">🏠</button>
-        <button className="menu-btn">📊</button>
-        <button className="menu-btn">🔁</button>
-        <button className="menu-btn">🔍</button>
-      </div>
+    
+      <div><Bottommenu /></div>
     </div>
   );
 };
