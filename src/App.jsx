@@ -20,7 +20,6 @@ import CreateWith24Word from './pages/CreateWith24Word'
 
 
 
-
 function App() {
   return (
     <div>
@@ -42,7 +41,7 @@ function App() {
         <Route path='/createwallet/createwith12' element={<CreateWith12Word/>} exact />
         <Route path='/createwallet/createwith24' element={<CreateWith24Word/>} exact />
         <Route path='/createwallet/createwith12/importwallet' element={<ImportWallet />} exact />
-       
+        <Route path='/createwallet/createwith24/importwallet' element={<ImportWallet />} exact />
 
       </Routes>
     </div>

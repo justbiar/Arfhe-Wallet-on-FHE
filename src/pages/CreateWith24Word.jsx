@@ -1,5 +1,7 @@
 import React from "react";
 import "./CreateWith24Word.css";
+import CreateWith24toImport from "../components/CreateWith24toImport";
+import BackButton from "../components/BackButton";
 
 const CreateWith24Word = () => {
   const words = [
@@ -18,7 +20,8 @@ const CreateWith24Word = () => {
             </div>
           ))}
         </div>
-        <button className="create-button">Cüzdan Oluştur</button>
+        <CreateWith24toImport/>
+        <BackButton/>
         <button className="back-button">Geri</button>
       </div>
     </div>

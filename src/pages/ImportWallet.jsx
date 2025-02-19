@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './ImportWallet.css'
 import Importwalletbutton2 from '../components/Loginimportwalletbutton'
-
+import BackButton from "../components/BackButton";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -36,7 +36,8 @@ function App() {
        
        <Importwalletbutton2 />
      </div>
-
+     <BackButton/>
+     
     </div>
 
     </>
