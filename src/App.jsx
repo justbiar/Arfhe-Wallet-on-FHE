@@ -27,6 +27,7 @@ function App() {
         <Route path='/' element={<FirstLogin/>} exact />
         <Route path='/createwallet' element={<CreateNewWallet/>} exact/>
         <Route path='/home' element={<Home/>} exact />
+        <Route path='/home/send' element={<Sending/>} exact />
         <Route path='/createpassword' element={<CreatePassword />} exact />
         <Route path='/discovery' element={<Discovery />}exact />
         <Route path='/history' element={<History/>} exact />
