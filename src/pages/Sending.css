@@ -77,8 +77,8 @@
     margin-top: 200px;
     padding: 10px;
     background-color: #F3F4F6;
-    border-radius: 500px;
-    border: 4px black;
+    border-radius: 50px; /* Daha düzgün oval görünüm */
+    border: 1px solid black; /* Çerçeveyi düzgün yap! */
     
   }
   

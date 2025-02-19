@@ -1,5 +1,7 @@
 import React from "react";
 import './Sending.css'
+import Bottommenu from "../components/Bottommenu";
+
 
 const SendScreen = () => {
   return (
@@ -29,12 +31,7 @@ const SendScreen = () => {
 
       <button className="send-button">Gönder</button>
 
-      <nav className="bottom-nav">
-        <button className="nav-item">🏠</button>
-        <button className="nav-item">📊</button>
-        <button className="nav-item">🔄</button>
-        <button className="nav-item">🔍</button>
-      </nav>
+      <Bottommenu />
     </div>
   );
 };
