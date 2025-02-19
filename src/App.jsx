@@ -17,7 +17,7 @@ import Swap from './pages/Swap'
 import ImportWallet from './pages/ImportWallet'
 import CreateWith12Word from './pages/CreateWith12Word'
 import CreateWith24Word from './pages/CreateWith24Word'
-import CreateWith12toImport  from './pages/CreateWith12Word'
+
 
 
 
