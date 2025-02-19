@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './Home.css'
 import React from "react";
 import Homesendbutton from '../components/Homesendbutton';
+import Homereceivebutton from '../components/Homereceivingbutton';
 
 
 const Home = () => {
@@ -30,11 +31,12 @@ const Home = () => {
 
       {/* İşlem Butonları */}
       <div className="action-buttons">
-        <button className="action-btn">Yatır</button>
+      <Homereceivebutton/>
         <button className="action-btn">Keşfet</button>
         <button className="action-btn">Geçmiş</button>
         <button className="action-btn">İptal</button>
         <Homesendbutton />
+        
       </div>
 
       {/* Varlıklar */}
