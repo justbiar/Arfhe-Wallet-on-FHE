@@ -5,6 +5,7 @@ import Bottommenu from "../components/Bottommenu";
 
 const Receiving = () => {
   return (
+    <>
     <div className="deposit-container">
       {/* Üst Bilgi (Network ve Asset) */}
       <div className="info-section">
@@ -26,10 +27,12 @@ const Receiving = () => {
         0xa25g5de5g451vvvd75q5frru5kdf5h5lDhrr
       </div>
 
-      <Bottommenu />
+     
       
     
     </div>
+    <Bottommenu />
+    </>
   );
 };
 
