@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './Home.css'
 import React from "react";
+import Homesendbutton from '../components/Homesendbutton';
 
 
 const Home = () => {
@@ -33,7 +34,7 @@ const Home = () => {
         <button className="action-btn">Keşfet</button>
         <button className="action-btn">Geçmiş</button>
         <button className="action-btn">İptal</button>
-        <button className="action-btn">Gönder</button>
+        <Homesendbutton />
       </div>
 
       {/* Varlıklar */}

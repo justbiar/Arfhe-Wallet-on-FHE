@@ -13,7 +13,7 @@ const CreateWith12Word = () => {
 
   return (
     <div className="app-container">
-      <div className="card">
+      <div>
         <h2 className="header"> 12 Kelime</h2>
         <div className="word-container">
           {words.map((word, index) => (

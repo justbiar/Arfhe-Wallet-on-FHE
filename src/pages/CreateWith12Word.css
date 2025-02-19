@@ -6,27 +6,18 @@ body{
   width: 393px;
   height: 814px;
   background-color: #F3F4F6;
-  display: flex;
-  flex-direction: column; /* İçerikleri dikey hizala */
-  align-items: center; /* Yatayda ortala */
-  justify-content: center; /* Dikeyde ortala */
   border-radius: 43px;
 }
   
-  /* Kart tasarımı */
-  .card {
-    width: 320px;
-    background-color: #F3F4F6;
-    border-radius: 16px;
-    padding: 20px;
-    text-align: center;
-  }
+  
   
   /* Başlık */
   .header {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 16px;
+    align-items: center; /* Yatayda ortala */
+    justify-content: center; /* Dikeyde ortala */
     
   }
   
@@ -42,53 +33,14 @@ body{
   
   /* Kelime kutularının stili */
   .word-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #ffffff;
     width: 133px;
-    height: 39px;
+    height: 20px;
     border-radius: 8px;
     font-size: 17px;
     font-weight: bold;
     border-radius: 23.5px;
-    
+    margin-top: 0%;
   }
   
-  /* Butonlar */
-.create-button{
-  margin-top: 12px;
-  width: 215px;
-  height: 39.1px;
-  background-color: #003C9D;
-  border: none;
-  border-radius: 23.5px;
-  color: white;
-  font-family: 'Inter', sans-serif;
-  font-size: 20px;
-  font-weight: 600; /* Semi-Bold */
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s ease;
-}
-.back-button {
   
-  margin-top: 6px;
-  width: 215px;
-  height: 39.1px;
-  background-color: #003C9D;
-  border: none;
-  border-radius: 23.5px;
-  color: white;
-  font-family: 'Inter', sans-serif;
-  font-size: 20px;
-  font-weight: 600; /* Semi-Bold */
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s ease;
-}
-
-.create-button:hover,
-.back-button:hover {
-  background-color: #091a5d;
-}
