@@ -4,6 +4,7 @@ import Createwalletbutton from '../components/Createwalletbutton'
 import Importwalletbutton from '../components/Importwalletbutton'
 import CreateWith12Word from '../components/Createwith12word'
 import CreateWith24Word from '../components/Createwith24word'
+import BackButton from "../components/BackButton";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,6 +25,7 @@ function App() {
        
         <CreateWith12Word />
         <CreateWith24Word />
+        <BackButton />
       </div>
     </div>
 

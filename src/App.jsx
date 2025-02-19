@@ -17,7 +17,6 @@ import Swap from './pages/Swap'
 import ImportWallet from './pages/ImportWallet'
 import CreateWith12Word from './pages/CreateWith12Word'
 import CreateWith24Word from './pages/CreateWith24Word'
-import CreateWith12toImport  from './pages/CreateWith12Word'
 
 
 
@@ -42,7 +41,7 @@ function App() {
         <Route path='/createwallet/createwith12' element={<CreateWith12Word/>} exact />
         <Route path='/createwallet/createwith24' element={<CreateWith24Word/>} exact />
         <Route path='/createwallet/createwith12/importwallet' element={<ImportWallet />} exact />
-       
+        <Route path='/createwallet/createwith24/importwallet' element={<ImportWallet />} exact />
 
       </Routes>
     </div>
