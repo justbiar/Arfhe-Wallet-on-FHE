@@ -32,7 +32,7 @@ function App() {
         <Route path='/history' element={<History/>} exact />
         <Route path='/login' element={<Login/>} exact />
         <Route path='/portfolio' element={<Portfolio/>} exact />
-        <Route path='/receiving' element={<Receiving/>} exact />
+        <Route path='/home/Receiving' element={<Receiving/>} exact />
         <Route path='/research' element={<Research/>} exact />
         <Route path='/revoke' element={<Revoke/>} exact />
         <Route path='/sending' element={<Sending/>} exact/>
