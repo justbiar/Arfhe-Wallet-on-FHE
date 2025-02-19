@@ -1,180 +1,197 @@
-/* Sayfa Boyutunu Sabitle (393x814 px) */
+/* 📌 Sayfa Boyutunu Sabitle */
 .dashboard-container {
-    width: 393px;  /* Sabit genişlik */
-    height: 814px; /* Sabit yükseklik */
-    background-color: #f2f2f2;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    overflow: hidden; /* Taşan içerikleri gizler */
-  }
-  
-  /* Üst Kısım */
-  .top-section {
-    width: 359px;
-    height: 38.9px;
-    text-align: center;
-    background-color: #0D247C;
-    color: white;
-    padding: 10px;
-    border-radius: 21px;
-    position: relative;
-  }
-  
-  .account-title {
-    
-    
-    display: flex;
-    justify-self: center;
-    font-size: 16px;
-    font-weight: bold;
+  width: 393px;
+  height: 814px;
+  background-color: #F3F4F6;
+  display: flex;
+  flex-direction: column; /* İçerikleri dikey hizala */
+  align-items: center; /* Yatayda ortala */
+  justify-content: center; /* Dikeyde ortala */
+  border-radius: 43px;
+}
 
-    position: absolute;
-    top: 0%;
-    right: 44%;
-  }
-  
-  .account-name {
-    font-size: 14px;
-    position: absolute;
-    top: 20px;
-    right: 45%;
-  }
-  
-  .network-badge {
-    background-color: white;
-    color: black;
-    padding: 5px;
-    border-radius: 8px;
-    display: inline-block;
-    margin-top: 5px;
-    cursor: pointer;
-    position: absolute;
-    top: 60px;
-    right: 32.5%;
-  }
-  
-  .network-name {
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .menu-icon {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
-  /* Profil Alanı */
-  .profile-container {
-    text-align: center;
-    margin-top: 5px;
-  }
-  
-  .profile-image {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
-    top: 18%;
-    right:42% ;
-  }
-  
-  .balance {
-    font-size: 36px;
-    font-weight: bold;
-    color: #ffffff;
-    margin-top: 5px;
-    position: absolute;
-    top: 25%;
-    right: 29%;
-  }
-  
-  /* Grafik Alanı */
-  .chart-container {
-    width: 90%;
-    height: 42%;
-    background-color: #0D247C;
-    padding: 15px;
-    border-radius: 12px;
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  /* İşlem Butonları */
-  .action-buttons {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin-top: 10px;
-    position: absolute;
-    top: 51%;
-  }
-  
-  .action-btn {
-    flex: 1;
-    padding: 10px;
-    background-color: #112ea0;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    margin: 5px;
-    font-size: 14px;
-    cursor: pointer; /*farenın el simgesine donusmesıını sağlar*/
-  }
-  
-  .action-btn:hover {
-    background-color: #091a5d;
-  }
-  
-  /* Varlıklar */
-  .assets-container {
-    width: 90%;
-    background-color: #0D247C;
-    padding: 15px;
-    border-radius: 12px;
-    color: white;
-    text-align: center;
-    margin-top: 10px;
-    position: absolute;
-    top: 60%;
-  }
-  
-  .assets-title {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .asset-item {
-    background-color: white;
-    color: black;
-    padding: 10px;
-    border-radius: 8px;
-    margin: 5px 0;
-    font-size: 14px;
-  }
-  
-  /* Alt Menü */
-  .bottom-menu {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    background-color: white;
-    padding: 10px;
-    border-radius: 12px;
-  }
-  
-  .menu-btn {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
+/* 📌 Üst Kısım */
+.top-section {
+  width: 359px;
+  height: 38.09;
+  display: flex;
+  justify-content: space-between;
+  background-color:  #0D247C;
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  position: relative;
+  transform: translateY(0px);
+}
+
+.account-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  position: relative;
+  left: 44%;
+}
+
+.account-name {
+  font-size: 12px;
+  position: relative;
+  top: 5%;
+  left: -5%;
+}
+
+.network-badge {
+  background-color: #0D247C;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 12px;
+  font-size: 14px;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.network-name {
+  font-weight: bold;
+}
+
+/* 📌 Profil */
+.profile-container {
+  margin-top: 30px;
+  position: relative;
+  transform: translateY(60px);
+  left: 50px;
+  z-index: 11;
+ 
+}
+
+.profile-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-top: 0%;
+  border: 3px solid white;
+  object-fit: cover;
+  z-index: 11;
+}
+
+.balance {
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  position: relative;
+  border-radius: 10px;
+  left: -40px;
+  z-index: 10;
+  transform: translateY(-20px);
+}
+
+/* 📌 Grafik Alanı */
+.chart-container {
+  display: block;
+  width: 359px;
+  height: 325px ;
+  background-color: #0D247C;
+  padding: 10px;
+  border-radius: 12px;
+  transform: translateY(-60px);
+  z-index: 0;
+}
+
+/* 📌 İşlem Butonları */
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 10px;
+  transform: translateY(-120px);
+
+}
+
+.action-btn {
+  flex: 1;
+  padding: 8px;
+  background-color: #0D247C;
+  color: rgb(168, 18, 18);
+  border: none;
+  border-radius: 8px;
+  margin: 3px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.action-btn:hover {
+  background-color: #091a5d;
+}
+
+/* 📌 Varlık Listesi */
+.assets-container {
+  width: 90%;
+  padding: 5px;
+  border-radius: 12px;
+  text-align: center;
+  transform: translateY(-120px);
+}
+
+.assets-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.asset-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.asset-item {
+  display: flex;
+  align-items: center;
+  background-color: #0D247C;
+  color: white;
+  padding: 10px;
+  border-radius: 22px;
+  margin: 0px 0;
+  font-size: 14px;
+  width: 340px;
+  height: 20px;
+  box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Daireyi oluştur */
+.asset-icon {
+  width: 35px;
+  height: 35px;
+  background-color: #D9D9D9; /* Arka plan rengi */
+  border-radius: 50%; /* Daire yapmak için */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px; /* Coin ismiyle arasındaki mesafe */
+}
+
+/* İkonun içindeki SVG veya metin */
+.asset-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+
+/* 📌 Alt Menü */
+.bottom-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  padding: 10px;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+

@@ -1,12 +1,13 @@
 .bottom-nav {
-    display: flex;
-    justify-content: space-around;
-    width: 359px;
-    height: 80px;
-    margin-top: 200px;
-    padding: 10px;
-    background-color: #F3F4F6;
-    border-radius: 50px; /* Daha düzgün oval görünüm */
-    border: 1px solid black; /* Çerçeveyi düzgün yap! */
-    
-  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%; /* Cüzdanın genişliğine uyum sağlasın */
+  height: 80px;
+  position: absolute;
+  bottom: -120px; /* Cüzdanın en altına sabitle */
+  left: 15px;
+  background-color: #F3F4F6;
+  border-radius: 0 0 43px 43px; /* Alt kısımdaki yuvarlatmayı sağlar */
+  border-top: 2px solid black;
+}

@@ -1,56 +1,81 @@
-import { useState } from 'react'
-import './Home.css'
 import React from "react";
-import Homesendbutton from '../components/Homesendbutton';
+import "./Home.css";
 import Homereceivebutton from '../components/Homereceivingbutton';
 import Bottommenu from "../components/Bottommenu";
-
+import { Homesendbutton, HomeDiscoverybutton, HomeHistorybutton, HomeRevokebutton } from "../components/Homesendbutton";
 
 const Home = () => {
+ 
   return (
     <div className="dashboard-container">
-      {/* Üst kısım - Hesap ve Network */}
+      
+      {/* 📌 Üst Kısım - Hesap ve Network */}
       <div className="top-section">
         <h3 className="account-title">Hesap</h3>
         <p className="account-name">biar.arf</p>
-        <div className="network-badge">Network : <span className="network-name">fhEVM</span></div>
+        <div className="network-badge">
+          Network : <span className="network-name">fhEVM</span>
+        </div>
         <div className="menu-icon">⋮</div>
       </div>
 
-      {/* Profil Fotoğrafı ve Bakiye */}
+      {/* 📌 Profil ve Bakiye */}
       <div className="profile-container">
-        <img src="public/image2.png" alt="Profile" className="profile-image" />
+        <img src="/image2.png" alt="Profile" className="profile-image" />
         <h1 className="balance">1.501,12₺</h1>
       </div>
 
-      {/* Grafik Alanı */}
+      {/* 📌 Grafik Alanı */}
       <div className="chart-container">
         <div className="chart">
-          {/* Grafik Simülasyonu (Gerçek grafik yerine placeholder) */}
+          {/* Grafik Kütüphanesi ile Eklenecek */}
         </div>
       </div>
 
-      {/* İşlem Butonları */}
+      {/* 📌 İşlem Butonları */}
       <div className="action-buttons">
-      <Homereceivebutton/>
-        <button className="action-btn">Keşfet</button>
-        <button className="action-btn">Geçmiş</button>
-        <button className="action-btn">İptal</button>
+        <Homereceivebutton />
+        <HomeDiscoverybutton />
+        <HomeHistorybutton />
+        <HomeRevokebutton />
         <Homesendbutton />
-        
       </div>
 
-      {/* Varlıklar */}
+      {/* 📌 Varlıklar */}
       <div className="assets-container">
-        <h2 className="assets-title">Assets</h2>
-        <div className="asset-item">1 ARF</div>
-        <div className="asset-item">1 ETH</div>
-        <div className="asset-item">1 BTC</div>
-        <div className="asset-item">1 SOL</div>
-      </div>
+    <h2 className="assets-title">Assets</h2>
+    <div className="asset-list">
+        <div className="asset-item">
+            <div className="asset-icon">
+                <img src="/coin.svg" alt="Coin" />
+            </div>
+            1 ARF
+        </div>
+        <div className="asset-item">
+            <div className="asset-icon">
+                <img src="/coin.svg" alt="Coin" />
+            </div>
+            1 ETH
+        </div>
+        <div className="asset-item">
+            <div className="asset-icon">
+                <img src="/coin.svg" alt="Coin" />
+            </div>
+            1 BTC
+        </div>
+        <div className="asset-item">
+            <div className="asset-icon">
+                <img src="/coin.svg" alt="Coin" />
+            </div>
+            1 SOL
+        </div>
+    </div>
+</div>
 
-    
-      <div><Bottommenu /></div>
+
+      {/* 📌 Alt Menü */}
+      <Bottommenu />
+
     </div>
   );
 };
