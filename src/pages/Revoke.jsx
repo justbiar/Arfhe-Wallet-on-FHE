@@ -9,7 +9,7 @@ function App() {
     <>
     <div className="app-container">
       <div className='header'>
-      <h1 className="app-title"> Revoke Burada Olacak</h1>
+      <h1 className="app-title"> VERY SOON</h1>
       </div>
       </div>
 

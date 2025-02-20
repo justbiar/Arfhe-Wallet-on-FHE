@@ -5,7 +5,7 @@ import App from "../../App";
 function ImportWalletButton2(){
 return (
     <div>
-        <Link to='/home'>
+        <Link to='/CreatePassword'>
 <button className='import-wallet-button'>İçe Aktar</button></Link>
     </div>
 )
