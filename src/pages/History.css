@@ -1,0 +1,95 @@
+/* Genel Sayfa Tasarımı */
+.container {
+  width: 393px;
+  height: 814px;
+  background-color: #f3f4f6;
+  border-radius: 20px;
+  padding-bottom: 100px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+}
+.history-logo{
+  position: absolute;
+  top: 15px;
+  justify-content: space-between;
+  color: black;
+}
+
+/* İşlem Listesi */
+.transaction-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0px;
+}
+
+/* İşlem Kutuları */
+.transaction-box {
+  width: 340px;
+  height: 59px;
+  background-color: white;
+  border: 2px solid #0044cc;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Metinler İçin Gelişmiş Stil */
+.transaction-box .type {
+  font-weight: bold;
+  color: black;
+  font-size: 15px;
+  margin-bottom: -1px; /* Boşluk ekledik ki üst üste binmesin */
+}
+
+.transaction-box .details {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.transaction-box .tx {
+  font-size: 10px;
+  color: gray;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: -20px;
+}
+
+.transaction-box .time {
+  font-size: 10px;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+
+
+/* Font Boyutunu Otomatik Ayarla */
+.transaction-box p {
+  font-size: clamp(8px, 2vw, 12px); /* Yazı büyüklüğünü ekrana göre ayarlar */
+ /* Taşan yazılar görünmez */
+ /* Taşan yazıları "..." ile gösterir */
+}
+
+/* Zoom yapınca sayfanın kaymasını önleme */
+html, body {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+} 
