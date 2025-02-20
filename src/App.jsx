@@ -46,7 +46,7 @@ function App() {
         <Route path='/createwallet/createwith12/importwallet' element={<ImportWallet />} exact />
         <Route path='/createwallet/createwith24/importwallet' element={<ImportWallet />} exact />
         <Route path='/CreatePassword/createwallet' element={<Login/>} exact />
-        
+        <Route path='/account' element={<Account/>} exact/>
       </Routes>
     </div>
   );
