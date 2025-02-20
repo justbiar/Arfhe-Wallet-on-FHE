@@ -1,22 +1,16 @@
-import React, { useState, useEffect } from "react";
-import "./Sidebar.css"; // Eğer ekstra stil gerekiyorsa
+import React, { useState } from "react";
+import "./Sidebar.css"; // CSS dosyanı bağla
 
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleSidebar = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(!isOpen); // Aç/kapa yap
   };
-
-  useEffect(() => {
-    // Butonu `body` içine ekleyerek tüm div etkilerini kaldırıyoruz
-    const button = document.querySelector(".menu-button");
-    document.body.appendChild(button);
-  }, []);
 
   return (
     <>
-      {/* Menü Açma Butonu (Figma'dan Gelen İkon) */}
+      {/* Menü Açma Butonu */}
       <button className="menu-button" onClick={toggleSidebar}>
         <img src="/menu.svg" alt="Menü" className="menu-icon" />
       </button>
@@ -26,10 +20,10 @@ function Sidebar() {
         <div className="sidebar-header">
           <h2>Menü</h2>
           <button className="close-button" onClick={toggleSidebar}>
-            X
+           X
           </button>
         </div>
-        
+
         {/* Menü İçeriği */}
         <ul className="sidebar-menu">
           <li><a href="/accounts">Hesaplar</a></li>
