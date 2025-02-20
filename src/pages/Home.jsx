@@ -51,7 +51,7 @@ const Home = () => {
       </div>
 
     
-      <div><Bottommenu /></div>
+      <Bottommenu />
     </div>
   );
 };

@@ -5,8 +5,7 @@ import './Bottommenu.css'
 function Bottommenu (){
 
 return (
-   <div>
-       
+   <>
        <nav className="bottom-nav">
         <button className="nav-item">
         <Link to="/home">
@@ -32,7 +31,7 @@ return (
          </Link>
         </button>
       </nav>
-   </div>
+   </>
 )
 
 }
