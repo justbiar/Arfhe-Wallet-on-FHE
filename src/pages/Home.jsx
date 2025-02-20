@@ -3,6 +3,7 @@ import "./Home.css";
 import Homereceivebutton from '../components/Homereceivingbutton';
 import Bottommenu from "../components/Bottommenu";
 import { Homesendbutton, HomeDiscoverybutton, HomeHistorybutton, HomeRevokebutton } from "../components/Homesendbutton";
+import Sidebar from "../components/Sidebar";
 
 const Home = () => {
  
@@ -16,9 +17,8 @@ const Home = () => {
         <div className="network-badge">
           Network : <span className="network-name">fhEVM</span>
         </div>
-        <div className="menu-icon">⋮</div>
       </div>
-
+          <Sidebar />
       {/* 📌 Profil ve Bakiye */}
       <div className="profile-container">
         <img src="/image2.png" alt="Profile" className="profile-image" />

@@ -35,8 +35,9 @@
 .account-name {
   font-size: 12px;
   position: relative;
-  top: 5%;
-  left: -5%;
+  top: 5px;
+  transform: translateX(-161px);
+
 }
 
 .network-badge {
