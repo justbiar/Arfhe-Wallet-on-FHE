@@ -1,0 +1,114 @@
+.wallet-container {
+    width: 393px;
+    height: 814px;
+    background-color: #F3F4F6;
+    display: flex;
+    flex-direction: column; /* İçerikleri dikey hizala */
+    align-items: center; /* Yatayda ortala */
+    justify-content: center; /* Dikeyde ortala */
+    border-radius: 43px;
+  }
+  
+  h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .network-select {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .network-select input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #002f6c;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+  }
+  
+  .accounts-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .account-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: 2px solid #002f6c;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .actions {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .primary-button {
+        width: 215px;
+        height: 39.1px;
+        background-color: #003C9D;
+        border: none;
+        border-radius: 23.5px;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        font-weight: 600; /* Semi-Bold */
+        align-items: center;
+        transition: background-color 0.3s ease;
+        transform: translateX(70px);
+
+        
+    }
+    .primary-button:hover {
+        background-color: #002F7A;
+      }
+ 
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: white;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 2px solid #ddd;
+  }
+  
+  .nav-button {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  

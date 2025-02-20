@@ -26,7 +26,7 @@ function Sidebar() {
 
         {/* Menü İçeriği */}
         <ul className="sidebar-menu">
-          <li><a href="/accounts">Hesaplar</a></li>
+          <li><a href="/account">Hesaplar</a></li>
           <li><a href="/explorer">Explorer</a></li>
           <li><a href="/settings">Ayarlar</a></li>
           <li><a href="/reset-wallet">Cüzdanı Sıfırla</a></li>
