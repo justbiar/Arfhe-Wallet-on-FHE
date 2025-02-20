@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './Revoke.css'
-
+import Bottommenu from "../components/Bottommenu";
 function App() {
   const [count, setCount] = useState(0)
   
@@ -14,7 +14,7 @@ function App() {
       </div>
 
       
-
+<Bottommenu />
 
     </>
   )

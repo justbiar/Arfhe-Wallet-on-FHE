@@ -25,7 +25,7 @@ const SendScreen = () => {
       </div>
 
       <div className="fee-section">
-        <img src="../public/settings.svg" alt="Settings" className="gear-icon" />
+        <img src="../settings.svg" alt="Settings" className="gear-icon" />
         <span>Fee</span>
       </div>
 
