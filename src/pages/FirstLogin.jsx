@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './FirstLogin.css'
-import Createwalletbutton from '../components/Createwalletbutton'
-import Importwalletbutton from '../components/Importwalletbutton'
+import Createwalletbutton from '../components/button/Createwalletbutton'
+import Importwalletbutton from '../components/button/Importwalletbutton'
 
 function App() {
   const [count, setCount] = useState(0)

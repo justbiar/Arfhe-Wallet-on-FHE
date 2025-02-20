@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import './Homesendbutton.css';
-
+import App from "../../App";
 function NavigationButton({ label, path }) {
     const navigate = useNavigate();
     

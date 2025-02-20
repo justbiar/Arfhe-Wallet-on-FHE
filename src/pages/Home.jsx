@@ -1,9 +1,9 @@
 import React from "react";
 import "./Home.css";
-import Homereceivebutton from '../components/Homereceivingbutton';
-import Bottommenu from "../components/Bottommenu";
-import { Homesendbutton, HomeDiscoverybutton, HomeHistorybutton, HomeRevokebutton } from "../components/Homesendbutton";
-import Sidebar from "../components/Sidebar";
+import Homereceivebutton from '../components/button/Homereceivingbutton';
+import Bottommenu from "../components/menu/Bottommenu";
+import { Homesendbutton, HomeDiscoverybutton, HomeHistorybutton, HomeRevokebutton } from "../components/button/Homesendbutton";
+import Sidebar from "../components/menu/Sidebar.jsx";
 
 const Home = () => {
  

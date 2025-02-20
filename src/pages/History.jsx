@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './History.css'
-import Bottommenu from "../components/Bottommenu";
+import Bottommenu from "../components/menu/Bottommenu";
 
 function App() {
   const [count, setCount] = useState(0)

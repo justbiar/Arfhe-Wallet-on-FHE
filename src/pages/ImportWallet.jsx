@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './ImportWallet.css'
-import Importwalletbutton2 from '../components/Loginimportwalletbutton'
-import BackButton from "../components/BackButton";
+import Importwalletbutton2 from '../components/button/Loginimportwalletbutton'
+import BackButton from "../components/button/BackButton";
 
 function App() {
   const [count, setCount] = useState(0)

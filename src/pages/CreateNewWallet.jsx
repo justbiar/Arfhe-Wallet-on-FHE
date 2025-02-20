@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import './CreateNewWallet.css'
-import Createwalletbutton from '../components/Createwalletbutton'
-import Importwalletbutton from '../components/Importwalletbutton'
-import CreateWith12Word from '../components/Createwith12word'
-import CreateWith24Word from '../components/Createwith24word'
-import BackButton from "../components/BackButton";
+import Createwalletbutton from '../components/button/Createwalletbutton'
+import Importwalletbutton from '../components/button/Importwalletbutton'
+import CreateWith12Word from '../components/button/Createwith12word'
+import CreateWith24Word from '../components/button/Createwith24word'
+import BackButton from "../components/button/BackButton";
 
 function App() {
   const [count, setCount] = useState(0)

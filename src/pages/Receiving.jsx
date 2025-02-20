@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './Receiving.css'
 import React from 'react'
-import Bottommenu from "../components/Bottommenu";
+import Bottommenu from "../components/menu/Bottommenu";
 
 const Receiving = () => {
   return (

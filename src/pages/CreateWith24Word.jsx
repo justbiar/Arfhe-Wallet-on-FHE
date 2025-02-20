@@ -1,7 +1,7 @@
 import React from "react";
 import "./CreateWith24Word.css";
-import CreateWith24toImport from "../components/CreateWith24toImport";
-import BackButton from "../components/BackButton";
+import CreateWith24toImport from "../components/button/CreateWith24toImport";
+import BackButton from "../components/button/BackButton";
 
 const CreateWith24Word = () => {
   const words = [

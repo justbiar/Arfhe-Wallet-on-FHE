@@ -1,16 +1,16 @@
 import React from "react"; 
 import { useNavigate } from "react-router-dom";
-import App from "../App";
+import App from "../../App";
 
-function CreateWith24toImport (){
+function CreateWith12toImport (){
     const navigate = useNavigate();
 
 return (
    <div>
        
-<button className='create-24-button'
+<button className='create-to-import-button'
 onClick={() => {
-   navigate('/createwallet/createwith24/importwallet')
+   navigate('/createwallet/createwith12/importwallet')
 }}
 >Cüzdan Oluşturr</button>
    </div>
@@ -18,4 +18,4 @@ onClick={() => {
 
 }
 
-export default CreateWith24toImport 
+export default CreateWith12toImport 

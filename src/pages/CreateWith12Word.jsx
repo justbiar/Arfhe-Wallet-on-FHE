@@ -1,7 +1,7 @@
 import React from "react";
 import "./CreateWith12Word.css";
-import CreateWith12toImport from "../components/CreateWith12toImport";
-import BackButton from "../components/BackButton";
+import CreateWith12toImport from "../components/button/CreateWith12toImport";
+import BackButton from "../components/button/BackButton";
 
 
 

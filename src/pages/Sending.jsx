@@ -1,6 +1,6 @@
 import React from "react";
 import './Sending.css'
-import Bottommenu from "../components/Bottommenu";
+import Bottommenu from "../components/menu/Bottommenu";
 
 
 const SendScreen = () => {
