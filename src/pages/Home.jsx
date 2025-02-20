@@ -48,8 +48,6 @@ const Home = () => {
         <div className="asset-item">1 BTC</div>
         <div className="asset-item">1 SOL</div>
       </div>
-
-    
       <div><Bottommenu /></div>
     </div>
   );
