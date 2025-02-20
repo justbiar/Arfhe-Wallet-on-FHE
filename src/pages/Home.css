@@ -160,24 +160,6 @@
   box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Daireyi oluştur */
-.asset-icon {
-  width: 35px;
-  height: 35px;
-  background-color: #D9D9D9; /* Arka plan rengi */
-  border-radius: 50%; /* Daire yapmak için */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 10px; /* Coin ismiyle arasındaki mesafe */
-}
-
-/* İkonun içindeki SVG veya metin */
-.asset-icon img {
-  width: 20px;
-  height: 20px;
-}
-
 
 /* 📌 Alt Menü */
 .bottom-menu {

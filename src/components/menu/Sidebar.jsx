@@ -30,8 +30,6 @@ function Sidebar() {
           <li><a href="/explorer">Explorer</a></li>
           <li><a href="/settings">Ayarlar</a></li>
           <li><a href="/reset-wallet">Cüzdanı Sıfırla</a></li>
-          <li><a href="/importwallet">İçe Aktar</a></li>
-          <li><a href="/create-wallet">Yeni Cüzdan Oluştur</a></li>
         </ul>
       </div>
     </>

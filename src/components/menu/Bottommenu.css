@@ -4,8 +4,8 @@
   align-items: center;
   width: 100%; /* Cüzdanın genişliğine uyum sağlasın */
   height: 80px;
-  position: absolute;
-  bottom: -220px; /* Cüzdanın en altına sabitle */
+  position: fixed;
+  bottom: 10px; /* Cüzdanın en altına sabitle */
   left: 15px;
   background-color: #F3F4F6;
   border-radius: 0 0 43px 43px; /* Alt kısımdaki yuvarlatmayı sağlar */
