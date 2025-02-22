@@ -1,23 +1,8 @@
-chrome.action.onClicked.addListener (tab => {
-    chrome.scripting.executeScript ({
-        target: {tabId: tab.id} ,
-        func: () => {
-            alert ('Hello welcome to the Arfhe Wallet on FHE');
-        }
-    });
+chrome.action.onClicked.addListener(tab => {7
+     chrome.scripting.executeScript({
+       target: {tabId: tab.id},
+       func: () => {
+          alert('Arfhe Wallet')
+       }
+     });
 });
-
-function updateText(text) {
-    document.getElementById('dropbtn').textContent = text;
-    toggleDropdown();  // Menüyü kapat
-  }
-  
-  function toggleDropdown() {
-    var dropdown = document.getElementById("myDropdown");
-    if (dropdown.style.display === "block") {
-      dropdown.style.display = "none";
-    } else {
-      dropdown.style.display = "block";
-    }
-  }
-  
