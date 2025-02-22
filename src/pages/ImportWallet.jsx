@@ -35,8 +35,9 @@ function App() {
       <div className='content'>
        
        <Importwalletbutton2 />
+       <BackButton/>
      </div>
-     <BackButton/>
+     
      
     </div>
 

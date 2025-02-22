@@ -7,13 +7,17 @@
     align-items: center; /* Yatayda ortala */
     justify-content: center; /* Dikeyde ortala */
     border-radius: 43px;
+    overflow: hidden !important;
   }
   
   .header {
     flex-direction: column;
+    padding: 0px !important;
+    background-color: #F3F4F6 !important;
   }
   
   .app-logo {
+    object-fit: cover !important;
     width: 200px;
     height: auto;
     margin-left: 5%;

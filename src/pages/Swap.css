@@ -68,13 +68,13 @@ width: 393px;
     font-size: 16px;
     font-weight: bold;
     position: absolute;
-    top: 303px; /* BTC kutusunun sol altına denk gelecek */
+    top: 315px; /* BTC kutusunun sol altına denk gelecek */
     left: 1380px; /* X Pozisyonu BTC'nin solunda */
     transform: translateX(-1350px);
   }
   
   .slippage-icon {
-    margin-right: 5px;
+    margin-right: 1px;
   }
   
   /* Takas Simülasyonu */

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 import "./Sidebar.css"; // CSS dosyanı bağla
+import { Accountsbutton } from "../../components/button/Homesendbutton";
 
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,7 +60,7 @@ function Sidebar() {
 
         {/* Menü İçeriği */}
         <ul className="sidebar-menu">
-          <li><a href="/account">Hesaplar</a></li>
+          <Accountsbutton />
           <li><a href="/explorer">Explorer</a></li>
           <li><a href="/settings">Ayarlar</a></li>
           <button onClick={handleResetWallet} style={{ backgroundColor: "red", color: "white", padding: "10px", borderRadius: "5px", border: "none", cursor: "pointer" }}>

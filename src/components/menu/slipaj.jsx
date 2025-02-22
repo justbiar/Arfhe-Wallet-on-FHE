@@ -19,7 +19,7 @@ function Slipaj() {
       {/* Sidebar */}
       <div className={`sidebar ${isOpen ? "open" : ""}`}>
         <div className="sidebar-header">
-          <h2>Slipaj</h2>
+          <div className="slipaj">Slipaj</div>
           <button className="close-button" onClick={toggleSidebar}>
            X
           </button>

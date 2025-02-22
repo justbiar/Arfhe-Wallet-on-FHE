@@ -35,8 +35,10 @@ function Login() {
 
   return (
     <div className="login-container">
+      <img src="/Arfhe-logo.png" alt='Logo' className='app-logo' />
       <h2>Şifre Giriniz</h2>
       <input
+      className='login-import-btn'
         type="password"
         placeholder="Şifrenizi Giriniz"
         value={inputPassword}

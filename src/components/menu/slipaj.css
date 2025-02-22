@@ -8,11 +8,13 @@
     border: none;
     padding: 10px;
     cursor: pointer;/* üstüne gelınce fare degısıyo*/
+   
   }
   
   .menu-icon {
-    width: 20px; /* İkon boyutunu Figma tasarımına göre ayarla */
+    width: 30px !important; /* İkon boyutunu Figma tasarımına göre ayarla */
     height: auto;
+    transform: translateY(-3px);
   }
   
   /* Kapatma butonu */
@@ -30,7 +32,7 @@
   /* Sidebar başlangıçta kapalı */
   .sidebar {
     position: absolute;
-    top: 300px;
+    top: 350px;
     left: 3000px;
     width: 250px;
     height: 150px;
@@ -50,10 +52,11 @@
   
   /* Menü başlığı */
   .sidebar-header {
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px !important;
+    transform: translateY(5px) !important;
   }
   
   /* Menü içeriği */
@@ -76,4 +79,9 @@
   
   .sidebar-menu a:hover {
     color: #002F7A;
+  }
+
+  .slipaj {
+    margin-bottom: 15px !important;
+    transform: translateY(5px) !important;
   }

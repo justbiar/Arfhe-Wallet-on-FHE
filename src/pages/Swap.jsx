@@ -33,7 +33,7 @@ const Swap = () => {
     </div>
     <div className='header'>
       <h1 className="app-title"></h1>
-    <img src="/settings.svg" alt='Logo' className='settings-logo' />
+  
     </div>
 
 
