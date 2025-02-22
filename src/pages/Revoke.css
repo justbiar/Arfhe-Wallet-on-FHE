@@ -1,0 +1,119 @@
+/* Genel sayfa düzeni */
+.container {
+    width: 393px;
+  height: 814px !important;
+  background-color: #f3f4f6;
+  border-radius: 20px;
+  padding-bottom: 100px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  }
+  
+  /* Üst kısım (ikon) */
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    background-color: white;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  /* Ana içerik alanı */
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    gap: 10px;
+    width: 90%;
+  }
+  
+  /* Küçük sözleşme kartları */
+  .contract-card {
+    width: 90%;
+    height: auto;
+
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .label {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .address {
+    font-size: 15px;
+    color: blue;
+    font-weight: bold;
+  }
+  
+  .details {
+    font-size: small;
+    float: right;
+    color: blue;
+    cursor: pointer;
+  }
+  
+  /* Büyük detay kutusu 
+  .contract-detail {
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    border: 2px solid #ff0000;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(255, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 10px;
+  }*/
+  
+  .highlight-address {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .allowed-value {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .value {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* İzinleri iptal et butonu */
+  .cancel-button {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .cancel-button:hover {
+    background-color: #cc0000;
+  }
+  
+
+
+  

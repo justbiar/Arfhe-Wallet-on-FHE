@@ -1,0 +1,52 @@
+/* Slipaj Menüsü */
+.slippage-container {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Slipaj Yüzdesi */
+  .slippage-label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Kaydırma Çubuğu (Slider) */
+  .slippage-slider {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 8px;
+    border-radius: 5px;
+    background: #ddd;
+    outline: none;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+  }
+  
+  .slippage-slider:hover {
+    opacity: 1;
+  }
+  
+  /* Slider’ın içindeki hareket eden düğme */
+  .slippage-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .slippage-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,103 @@
+/* Genel Konteyner */
+.swap-container {
+width: 393px;
+    height: 814px;
+    background-color: #F3F4F6;
+    display: flex;
+    flex-direction: column; /* İçerikleri dikey hizala */
+    align-items: center; /* Yatayda ortala */
+    justify-content: center; /* Dikeyde ortala */
+    border-radius: 43px;
+  }
+  .swap-logo{
+    position: absolute;
+  top: 160px;
+  left: 185px;
+  justify-content: space-between;
+  color: black;
+  }
+  .swap-logo2{
+    position: absolute;
+  top: 15px;
+  left: 185px;
+  justify-content: space-between;
+  color: black;
+  transform: rotate(0deg);
+  }
+  .settings-logo{
+    position: absolute;
+    width: 20px;
+    justify-content: space-between;
+    color: black;
+    top: 300px; /* BTC kutusunun sol altına denk gelecek */
+    left: 80px;
+  }
+  /* Swap Kutuları */
+  .swap-box {
+    width: 340px;
+    height: 84px;
+    border-radius: 23.5px;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    position: absolute;
+  }
+  
+  /* USDC Kutusu */
+  .usdc-box {
+    top: 65px; /* Y Pozisyonu */
+    left: 1692px; /* X Pozisyonu */
+    transform: translateX(-1663px); /* Sayfa içinde görünmesini sağlamak için */
+  }
+  
+  /* BTC Kutusu */
+  .btc-box {
+    top: 210px; /* Y Pozisyonu */
+    left: 1692px; /* X Pozisyonu */
+    transform: translateX(-1663px);
+  }
+  
+  /* Slippage */
+  .slippage {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 303px; /* BTC kutusunun sol altına denk gelecek */
+    left: 1380px; /* X Pozisyonu BTC'nin solunda */
+    transform: translateX(-1350px);
+  }
+  
+  .slippage-icon {
+    margin-right: 5px;
+  }
+  
+  /* Takas Simülasyonu */
+  .swap-simulation {
+    width: 338px;
+    height: 278px;
+    border-radius: 23.5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 350px; /* Y Pozisyonu */
+    left: 1700px; /* X Pozisyonu */
+    transform: translateX(-1667px);
+  }
+  
+
+  
+  .nav-icon {
+    font-size: 22px;
+  }
+  

@@ -24,7 +24,7 @@ const History = () => {
           </div>
         ))}
       </div>
-      <div className='header'>
+    <div className='header'>
       <h1 className="app-title"></h1>
     <img src="/history2.png" alt='Logo' className='history-logo' />
     </div>

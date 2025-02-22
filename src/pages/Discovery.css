@@ -1,0 +1,78 @@
+/* Sayfa genel düzeni */
+.container {
+    width: 393px;
+    height: 814px !important;
+    background-color: #f3f4f6;
+    border-radius: 20px;
+    padding-bottom: 100px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+  }
+  .discovery-logo{
+    position: absolute;
+  top: 25px;
+  left: 185px;
+  justify-content: space-between;
+  color: black;
+  transform: rotate(0deg);
+  }
+  
+  
+  
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Ana içerik alanı */
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    gap: 15px;
+   
+  }
+  
+  /* 3x3 ikon grid yapısı */
+  .icon-grid {
+    position: absolute;
+    top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .icon {
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+  }
+  
+  /* Reklam kutuları */
+  .ad-box {
+    position: absolute;
+    top: 400px;
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+
+
+  
