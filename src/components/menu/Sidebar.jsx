@@ -1,12 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Sidebar.css"; // CSS dosyanı bağla
 
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Aç/Kapat fonksiyonu
   const toggleSidebar = () => {
-    setIsOpen(!isOpen); // Aç/kapa yap
+    setIsOpen(!isOpen);
   };
+
+  // Sayfanın herhangi bir yerine tıklayınca menüyü kapat
+  const handleClickOutside = (event) => {
+    if (isOpen && !event.target.closest(".sidebar") && !event.target.closest(".menu-button")) {
+      setIsOpen(false);
+    }
+  };
+
+  // ESC tuşuna basınca menüyü kapat
+  const handleKeyDown = (event) => {
+    if (isOpen && event.key === "Escape") {
+      setIsOpen(false);
+    }
+  };
+
+  // Event Listener ekle/kaldır
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isOpen]);
 
   return (
     <>
@@ -19,9 +44,7 @@ function Sidebar() {
       <div className={`sidebar ${isOpen ? "open" : ""}`}>
         <div className="sidebar-header">
           <h2>Menü</h2>
-          <button className="close-button" onClick={toggleSidebar}>
-           X
-          </button>
+          <button className="close-button" onClick={toggleSidebar}>X</button>
         </div>
 
         {/* Menü İçeriği */}
