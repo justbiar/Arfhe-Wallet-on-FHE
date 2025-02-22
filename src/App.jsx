@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import {Routes, Route} from 'react-router-dom'
+import {Routes, Route, Navigate} from 'react-router-dom'
 import FirstLogin from './pages/FirstLogin'
 import CreateNewWallet from './pages/CreateNewWallet'
 import Home from './pages/Home'
@@ -32,7 +32,9 @@ function App() {
      
       
       <Routes>
-        <Route path='/' element={<FirstLogin/>} exact />
+        <Route path="/" element={
+          localStorage.getItem("isLoggedIn") === "true" ? <Navigate to="/createwallet" /> : <FirstLogin />
+        } />
         <Route path='/createwallet' element={<CreateNewWallet/>} exact/>
         <Route path='/home' element={<Home/>} exact />
         <Route path='/home/send' element={<Sending/>} exact />
@@ -52,9 +54,6 @@ function App() {
         <Route path='/createwallet/createwith12/importwallet' element={<ImportWallet />} exact />
         <Route path='/createwallet/createwith24/importwallet' element={<ImportWallet />} exact />
         <Route path='/CreatePassword/createwallet' element={<Login/>} exact />
-        <Route path='/account' element={<Account/>} exact/>
-        <Route path='/reset-wallet' element={<FirstLogin/>} exact/>
-       
 
       </Routes>
       

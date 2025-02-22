@@ -6,7 +6,7 @@
   width: 359px !important; /* Cüzdanın genişliğine uyum sağlasın */
   height: 80px !important;
   position: absolute;
-  bottom: 120px !important; /* Cüzdanın en altına sabitle */
+  bottom: 1% !important; /* Cüzdanın en altına sabitle */
   left: 25px !important;
   background-color: #F3F4F6 !important;
   border: 1px solid black !important;
