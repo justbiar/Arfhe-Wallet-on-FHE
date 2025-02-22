@@ -6,3 +6,8 @@ chrome.action.onClicked.addListener(tab => {7
        }
      });
 });
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.browsingData.removeCache({}, () => {
+    console.log("Extension yüklendi, cache temizlendi.");
+  });
+});
