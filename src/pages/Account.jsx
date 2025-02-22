@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Bottommenu from "../components/menu/Bottommenu";
 import './Account.css'
 import ImportWalletButton from "../components/button/Importwalletbutton";
 
-const WalletScreen = () => {
+
+const Account = () => {
   const [accounts, setAccounts] = useState(["Hesap 1", "Hesap 2"]); // Başlangıçta 2 hesap olsun
 
   const addAccount = () => {
@@ -11,7 +12,10 @@ const WalletScreen = () => {
       setAccounts([...accounts, `Hesap ${accounts.length + 1}`]);
     }
   };
-
+  useEffect(() => {
+    console.log("✅ Account bileşeni render edildi!");
+  }, []);
+  
   const deleteAccount = () => {
     if (accounts.length > 1) {
       setAccounts(accounts.slice(0, -1));
@@ -53,4 +57,4 @@ const WalletScreen = () => {
   );
 };
 
-export default WalletScreen;
+export default Account;

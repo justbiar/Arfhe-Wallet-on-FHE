@@ -18,6 +18,9 @@ import ImportWallet from './pages/ImportWallet'
 import CreateWith12Word from './pages/CreateWith12Word'
 import CreateWith24Word from './pages/CreateWith24Word'
 import Account from './pages/Account'
+ 
+
+
 
 
 
@@ -26,6 +29,8 @@ import Account from './pages/Account'
 function App() {
   return (
     <div>
+     
+      
       <Routes>
         <Route path="/" element={
           localStorage.getItem("isLoggedIn") === "true" ? <Navigate to="/createwallet" /> : <FirstLogin />
@@ -49,8 +54,9 @@ function App() {
         <Route path='/createwallet/createwith12/importwallet' element={<ImportWallet />} exact />
         <Route path='/createwallet/createwith24/importwallet' element={<ImportWallet />} exact />
         <Route path='/CreatePassword/createwallet' element={<Login/>} exact />
-        <Route path='/account' element={<Account />} exact/>
+
       </Routes>
+      
     </div>
   );
 };
