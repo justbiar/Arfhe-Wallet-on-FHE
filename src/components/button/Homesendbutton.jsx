@@ -30,3 +30,7 @@ export function HomeHistorybutton() {
 export function HomeRevokebutton() {
     return <NavigationButton label="İptal" path="/revoke" />;
 }
+
+export function Accountsbutton() {
+    return <NavigationButton label="Hesaplar" path="/account" />;
+}

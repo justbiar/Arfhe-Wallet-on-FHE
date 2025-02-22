@@ -49,3 +49,13 @@
     transition: background-color 0.3s ease;
     margin: 20px;
   }
+.login-import-btn {
+  width: 340px;
+  height: 40px;
+  background-color: #F3F4F6;
+  border: 2px solid #003C9D;
+  border-radius: 23.5px;
+  font-size: 16px;
+  padding: 10px;
+  outline: none;
+}
