@@ -1,0 +1,18 @@
+{
+    "manifest_version":3,
+    "version": "1.0.0",
+    "name": "Arfhe",
+    "action":{
+        "default_popup":"index.html"
+    },
+    "permissions":[
+        "scripting"
+    ],
+    "host_permissions":[
+        "http://*/*",
+        "https://*/*"
+    ],
+    "icons": {
+        "32": "icon48.png"
+    }
+}
