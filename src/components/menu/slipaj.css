@@ -1,0 +1,79 @@
+
+
+.settings-logo {
+    position: absolute;
+    top: 293px;
+    left: 75px;
+    background: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;/* üstüne gelınce fare degısıyo*/
+  }
+  
+  .menu-icon {
+    width: 20px; /* İkon boyutunu Figma tasarımına göre ayarla */
+    height: auto;
+  }
+  
+  /* Kapatma butonu */
+  .close-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .close-icon {
+    width: 300px; /* Kapatma ikonunun boyutu */
+    height: auto;
+  }
+  
+  /* Sidebar başlangıçta kapalı */
+  .sidebar {
+    position: absolute;
+    top: 300px;
+    left: 3000px;
+    width: 250px;
+    height: 150px;
+    background: white;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+    padding: 20px;
+    flex-direction: column;
+    z-index: 9999;
+    border-radius: 22px;
+  }
+  
+  /* Sidebar açıldığında */
+  .sidebar.open {
+    left: 50px;
+  }
+  
+  /* Menü başlığı */
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Menü içeriği */
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-menu li {
+    padding: 10px 0;
+  }
+  
+  .sidebar-menu a {
+    text-decoration: none;
+    color: #003C9D;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .sidebar-menu a:hover {
+    color: #002F7A;
+  }

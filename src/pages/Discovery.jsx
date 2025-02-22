@@ -1,24 +1,39 @@
 import { useState } from 'react'
 import './Discovery.css'
 import Bottommenu from "../components/menu/Bottommenu";
+import React from "react";
 
-function App() {
-  const [count, setCount] = useState(0)
-  
 
+const Discovery = () => {
   return (
-    <>
-    <div className="app-container">
-      <div className='header'>
-      <h1 className="app-title">Keşfet Ekranı Burada Olacak</h1>
-      </div>
-      </div>
+    <div className="container">
+      <header className="header">
+        <div className="logo">
+        <h1 className="app-title"></h1>
+        <img src="/discorvery.png" alt='Logo' className='discovery-logo' />
+          </div> {/* Üstteki yuvarlak logo */}
+      </header>
 
-      
+      <main className="main-content">
+        {/* 3x3 grid halinde ikonlar */}
+        <div className="icon-grid">
+          {Array.from({ length: 9 }).map((_, index) => (
+            <div key={index} className="icon">
+              🌐 {/* Globe simgesi */}
+            </div>
+          ))}
+        </div>
 
-      <Bottommenu />
-    </>
-  )
-}
+        {/* Reklam kutuları */}
+        <div className="ad-box">Uygulama reklamı</div>
+        <div className="ad-box">Uygulama reklamı</div>
+ 
+        
+      </main>
 
-export default App
+    <Bottommenu/>
+    </div>
+  );
+};
+
+export default Discovery;

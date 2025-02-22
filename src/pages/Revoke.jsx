@@ -1,23 +1,48 @@
 import { useState } from 'react'
 import './Revoke.css'
 import Bottommenu from "../components/menu/Bottommenu";
-function App() {
-  const [count, setCount] = useState(0)
-  
+import React from "react";
+
+
+const Revoke = () => {
+  const contracts = [
+    { address: "0xa25g5de5g45fwvd75q5f...", value: "100 USDC" },
+    { address: "0xa25g5de5g45fwvd75q5f...", value: "200 USDC" },
+    { address: "0xa25g5de5g45fwvd75q5f...", value: "400 USDC" },
+  ];
 
   return (
-    <>
-    <div className="app-container">
-      <div className='header'>
-      <h1 className="app-title"> VERY SOON</h1>
-      </div>
-      </div>
+    <div className="container">
+      {/* Üstteki icon */}
+      <header className="header">
+        <div className="logo">⚖️</div>
+      </header>
 
-      
-<Bottommenu />
+      {/* Ana içerik alanı */}
+      <main className="main-content">
+        {contracts.map((contract, index) => (
+          <div key={index} className="contract-card">
+            <p>
+              <span className="label">Sözleşme adresi</span>{" "}
+              <span className="address">{contract.address}</span>
+              <span className="details">Detayları göster</span>
+            </p>
+            <button className="cancel-button">İzinleri iptal et</button>
+          </div>
+        ))}
 
-    </>
-  )
-}
+        {/* Büyük detaylı kutu */}
+        <div className="contract-detail">
+          <p className="highlight-address">{contracts[0].address}</p>
+          <p className="allowed-value">İzin verilen değer</p>
+          <p className="value">{contracts[0].value}</p>
+          <button className="cancel-button">İzinleri iptal et</button>
+        </div>
+      </main>
 
-export default App
+    <Bottommenu/>
+    </div>
+  );
+};
+
+export default Revoke;
