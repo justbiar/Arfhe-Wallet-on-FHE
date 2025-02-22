@@ -10,7 +10,7 @@ function Sidebar() {
     if (window.confirm("Cüzdanınızı sıfırlamak istediğinize emin misiniz? Bu işlem geri alınamaz!")) {
       localStorage.clear(); // 🚀 Tüm giriş bilgilerini temizle
       alert("Cüzdan başarıyla sıfırlandı!");
-      navigate("/firstlogin"); // 🚀 Kullanıcıyı giriş ekranına yönlendir
+      navigate("/"); // 🚀 Kullanıcıyı giriş ekranına yönlendir
     }
   };
 
