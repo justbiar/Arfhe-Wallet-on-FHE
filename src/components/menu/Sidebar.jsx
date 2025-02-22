@@ -1,8 +1,18 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Sidebar.css"; // CSS dosyanı bağla
 
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const handleResetWallet = () => {
+    if (window.confirm("Cüzdanınızı sıfırlamak istediğinize emin misiniz? Bu işlem geri alınamaz!")) {
+      localStorage.clear(); // 🚀 Tüm giriş bilgilerini temizle
+      alert("Cüzdan başarıyla sıfırlandı!");
+      navigate("/firstlogin"); // 🚀 Kullanıcıyı giriş ekranına yönlendir
+    }
+  };
 
   // Aç/Kapat fonksiyonu
   const toggleSidebar = () => {
@@ -52,7 +62,9 @@ function Sidebar() {
           <li><a href="/account">Hesaplar</a></li>
           <li><a href="/explorer">Explorer</a></li>
           <li><a href="/settings">Ayarlar</a></li>
-          <li><a href="/reset-wallet">Cüzdanı Sıfırla</a></li>
+          <button onClick={handleResetWallet} style={{ backgroundColor: "red", color: "white", padding: "10px", borderRadius: "5px", border: "none", cursor: "pointer" }}>
+            Cüzdanı Sıfırla
+          </button>
         </ul>
       </div>
     </>

@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import {Routes, Route} from 'react-router-dom'
+import {Routes, Route, Navigate} from 'react-router-dom'
 import FirstLogin from './pages/FirstLogin'
 import CreateNewWallet from './pages/CreateNewWallet'
 import Home from './pages/Home'
@@ -27,7 +27,9 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path='/' element={<FirstLogin/>} exact />
+        <Route path="/" element={
+          localStorage.getItem("isLoggedIn") === "true" ? <Navigate to="/createwallet" /> : <FirstLogin />
+        } />
         <Route path='/createwallet' element={<CreateNewWallet/>} exact/>
         <Route path='/home' element={<Home/>} exact />
         <Route path='/home/send' element={<Sending/>} exact />

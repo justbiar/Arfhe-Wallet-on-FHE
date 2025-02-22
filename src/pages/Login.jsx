@@ -1,10 +1,18 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './Login.css'
 import BackButton from "../components/button/BackButton";
 import { useNavigate } from 'react-router-dom';
 function Login() {
   const [inputPassword, setInputPassword] = useState('');
   const navigate = useNavigate('');
+
+  useEffect(() => {
+    // Eğer zaten giriş yapılmışsa, direkt ana sayfaya yönlendir
+    if (localStorage.getItem("isLoggedIn") === "true") {
+      navigate("/home");
+    }
+  }, [navigate]);
+
   // Şifreyi kontrol etme fonksiyonu
   const handleLogin = () => {
     const savedPassword = localStorage.getItem("walletPassword");
@@ -16,6 +24,7 @@ function Login() {
     }
 
     if (inputPassword === savedPassword) {
+      localStorage.setItem("isLoggedIn", "true");
       alert("Giriş başarılı! Cüzdan açılıyor...");
       navigate("/home")
       // Burada yönlendirme yapabilirsin (örneğin, ana ekrana yönlendirme)
