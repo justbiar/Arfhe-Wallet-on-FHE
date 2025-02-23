@@ -35,7 +35,7 @@ function App() {
         <Route path="/" element={
           localStorage.getItem("isLoggedIn") === "true" ? <Navigate to="/importwallet" /> : <FirstLogin />
         } />
-        <Route path='/' element={<FirstLogin/>} exact/>
+        
         <Route path='/createwallet' element={<CreateNewWallet/>} exact/>
         <Route path='/account' element={<Account/>} exact/>
         <Route path='/home' element={<Home/>} exact />
