@@ -6,9 +6,18 @@ const BackButton = () => {
   const navigate = useNavigate();
 
   return (
-    <button onClick={() => navigate(-1)} className="back-button">
-      Geri
-    </button>
+    <button
+  onClick={() => {
+    if (window.history.state && window.history.state.idx > 0) {
+      navigate(-1);
+    } else {
+      navigate("/", { replace: true });
+    }
+  }}
+  className="back-button"
+>
+  Geri
+</button>
   );
 };
 
