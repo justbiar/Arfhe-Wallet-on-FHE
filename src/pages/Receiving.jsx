@@ -6,7 +6,7 @@ import Bottommenu from "../components/menu/Bottommenu";
 const Receiving = () => {
   return (
     <>
-    <div className="deposit-container">
+    <div className="app-container">
       {/* Üst Bilgi (Network ve Asset) */}
       <div className="info-section">
         <div className="info-badge">Network : <span className="highlight">fhEVM</span></div>

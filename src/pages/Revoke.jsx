@@ -12,7 +12,7 @@ const Revoke = () => {
   ];
 
   return (
-    <div className="container">
+    <div className="app-container">
       {/* Üstteki icon */}
       <header className="header">
         <div className="logo">⚖️</div>

@@ -2,7 +2,7 @@ body{
   font-family: sans-serif;
 }
 /* Genel sayfa arkaplanı */
-.container {
+.app-container {
   display: flex;
   justify-content: center;
   align-items: center;

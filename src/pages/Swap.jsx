@@ -7,7 +7,7 @@ import Slipaj from '../components/menu/slipaj';
 
 const Swap = () => {
   return (
-    <div className="swap-container">
+    <div className="app-container">
       {/* Swap Box 1 - USDC */}
       <div className="swap-box usdc-box">1 USDC</div>
 
