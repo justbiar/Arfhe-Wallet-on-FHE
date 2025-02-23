@@ -23,11 +23,16 @@ const Account = () => {
   };
 
   return (
-    <div className="wallet-container">
-      <h2>Ağ</h2>
-      <div className="network-select">
-        <input type="text" value="Bitcoin" readOnly />
-      </div>
+    <div className="app-container">
+      <h2>Network</h2>
+      <label for="network">Network</label>
+<select id="network">
+    <option value="bitcoin">Bitcoin</option>
+    <option value="etherium">ERC20</option>
+    <option value="bnb">BEP20</option>
+    <option value="solana">Solana</option>
+    <option value="arf">Arf</option>
+</select>
 
       <div className="accounts-container">
         {accounts.map((account, index) => (

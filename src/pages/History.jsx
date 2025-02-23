@@ -13,7 +13,7 @@ const transactions = [
 
 const History = () => {
   return (
-    <div className="container">
+    <div className="app-container">
       <div className="transaction-list">
         {transactions.map((tx, index) => (
           <div key={index} className="transaction-box">

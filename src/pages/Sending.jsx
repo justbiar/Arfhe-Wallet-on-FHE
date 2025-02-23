@@ -5,18 +5,29 @@ import Bottommenu from "../components/menu/Bottommenu";
 
 const SendScreen = () => {
   return (
-    <div className="send-screen">
+    <div className="app-container">
       <label>Alıcı adres</label>
-      <input type="text" value="0xa25g5de5g451vvvd75q5rru5kdf5h5lDHrr" readOnly />
+      <input type="text" placeholder=" 0xa25g5de5g451vvvd75q5frru5kdf5h5lDhrr"/>
 
-      <label>Asset</label>
-      <input type="text" value="Bitcoin" readOnly />
+      <label for="assest">Assest</label>
+<select id="assest">
+    <option value="bitcoin">Bitcoin</option>
+    <option value="etherium">Etherium</option>
+    <option value="solana">Solana</option>
+    <option value="arf">Arf</option>
+</select>
 
-      <label>Ağ</label>
-      <input type="text" value="Bitcoin" readOnly />
+      <label for="network">Network</label>
+<select id="network">
+    <option value="bitcoin">Bitcoin</option>
+    <option value="etherium">ERC20</option>
+    <option value="bnb">BEP20</option>
+    <option value="solana">Solana</option>
+    <option value="arf">Arf</option>
+</select>
 
       <label>Miktar</label>
-      <input type="text" value="1" readOnly />
+      <input type="number" min={"0"} placeholder="$"/>
 
       <div className="transfer-simulation">
         <p>Transfer simülasyonu</p>

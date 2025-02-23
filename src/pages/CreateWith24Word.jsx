@@ -10,7 +10,7 @@ const CreateWith24Word = () => {
   ];
 
   return (
-    <div className="container">
+    <div className="app-container">
       <div className="card">
         <h2 className="header"> 24 Kelime</h2>
         <div className="word-container">

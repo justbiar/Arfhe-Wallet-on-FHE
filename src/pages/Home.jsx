@@ -8,7 +8,7 @@ import Sidebar from "../components/menu/Sidebar.jsx";
 const Home = () => {
  
   return (
-    <div className="dashboard-container">
+    <div className="app-container">
       
       {/* 📌 Üst Kısım - Hesap ve Network */}
       <div className="top-section">

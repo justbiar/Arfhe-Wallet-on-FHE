@@ -6,7 +6,7 @@ import React from "react";
 
 const Discovery = () => {
   return (
-    <div className="container">
+    <div className="app-container">
       <header className="header">
         <div className="logo">
         <h1 className="app-title"></h1>
