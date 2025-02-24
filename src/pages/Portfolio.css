@@ -6,5 +6,7 @@
     flex-direction: column; /* İçerikleri dikey hizala */
     align-items: center; /* Yatayda ortala */
     justify-content: center; /* Dikeyde ortala */
-    border-radius: 43px;
+    overflow: hidden !important;
+    transform: scale(0.85); /* İçeriği %95 oranında küçült */
+    transform-origin: top center;
 }

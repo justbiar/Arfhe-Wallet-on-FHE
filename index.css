@@ -1,10 +1,16 @@
 .app-container {
-    width: 393px;
-    height: 814px;
-    background-color: #F3F4F6;
-    display: flex;
-    flex-direction: column; /* İçerikleri dikey hizala */
-    align-items: center; /* Yatayda ortala */
-    justify-content: center; /* Dikeyde ortala */
-    border-radius: 43px;
+    width: 325px !important;
+    height: 695px !important;
+    background-color: #F3F4F6 !important;
+    display: flex !important;
+    flex-direction: column !important; /* İçerikleri dikey hizala */
+    align-items: center !important; /* Yatayda ortala */
+    justify-content: center !important; /* Dikeyde ortala */
+    transform-origin: top center !important; /* Küçültmeyi yukarıdan başlat */
+    padding-top: 130px !important; /* Üstten boşluk ekleyerek yukarı kaymayı önle */
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+    max-width: 100% !important;
+    
+   
   }
