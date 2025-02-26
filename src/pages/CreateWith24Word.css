@@ -4,32 +4,28 @@ body{
 /* Genel sayfa arkaplanı */
 .container {
   width: 393px;
-  height: 814px !important;
-  background-color: #f3f4f6;
-  padding-bottom: 100px;
-  overflow-y: auto;
+  height: 814px;
+  background-color: #F3F4F6;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  box-sizing: border-box;
+  flex-direction: column; /* İçerikleri dikey hizala */
+  align-items: center; /* Yatayda ortala */
+  justify-content: center; /* Dikeyde ortala */
   overflow: hidden !important;
   transform: scale(0.85); /* İçeriği %95 oranında küçült */
   transform-origin: top center;
 }
 
+
 /* Kart tasarımı */
 .card {
   width: 320px;
-  background-color: #ffffff;
   border-radius: 16px;
   padding: 20px;
   text-align: center;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Başlık */
-.header {
+.header24 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 16px;

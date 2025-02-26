@@ -12,7 +12,7 @@ const CreateWith24Word = () => {
   return (
     <div className="container">
       <div className="card">
-        <h2 className="header"> 24 Kelime</h2>
+        <h2 className="header24"> 24 Kelime</h2>
         <div className="word-container">
           {words.map((word, index) => (
             <div key={index} className="word-box">
@@ -22,7 +22,7 @@ const CreateWith24Word = () => {
         </div>
         <CreateWith24toImport/>
         <BackButton/>
-        <button className="back-button">Geri</button>
+        
       </div>
     </div>
   );

@@ -11,10 +11,13 @@
     transform-origin: top center;
   }
   
-  .header {
+  .header3 {
     flex-direction: column;
     padding: 0px !important;
     background-color: #F3F4F6 !important;
+    flex-direction: column;
+    position: absolute;
+    top: 1px;
   }
   
   .app-logo {

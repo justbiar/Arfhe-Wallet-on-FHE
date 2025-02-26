@@ -10,7 +10,7 @@ function App() {
   return (
     <>
     <div className="import-container">
-      <div className='header'>
+      <div className='header5'>
       <h1 className="app-title">Arfhe Wallet</h1>
     <img src="/Arfhe-logo.png" alt='Logo' className='app-logo' />
       

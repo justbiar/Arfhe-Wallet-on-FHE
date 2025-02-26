@@ -1,4 +1,4 @@
-.app-container {
+.app-container2 {
   width: 393px;
   height: 814px;
   background-color: #F3F4F6;
@@ -12,8 +12,10 @@
   transform-origin: top center;
 }
 
-.header {
+.header1 {
   flex-direction: column;
+  position: absolute;
+  top: 1px;
 }
 
 .app-logo {
