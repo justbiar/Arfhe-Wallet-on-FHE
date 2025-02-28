@@ -1,7 +1,5 @@
 import { useState } from 'react'
 import './CreatePassword.css'
-import BackButton from "../components/button/BackButton";
-import Createwalletbutton from '../components/button/Createwalletbutton'
 import { useNavigate } from 'react-router-dom';
 
 function App() {
@@ -23,7 +21,7 @@ function App() {
 
   return (
     <>
-      <div className="app-container">
+      <div className="container">
         <div className='header'>
           <h1 className="app-title">Arfhe Wallet</h1>
           <img src="/Arfhe-logo.png" alt='Logo' className='app-logo' />
@@ -49,9 +47,14 @@ function App() {
 
         <div className='content'>
           <button onClick={handleSavePassword} className="save-password-btn">Şifreyi Kaydet</button>
+          <button onClick={() => {
+    if (window.history.state && window.history.state.idx > 0) {
+      navigate(-1);
+    } else {
+      navigate("/", { replace: true });
+    }
+    }}className='back-button-password'>Geri</button>
         </div>
-
-        <BackButton/>
       </div>
     </>
   )

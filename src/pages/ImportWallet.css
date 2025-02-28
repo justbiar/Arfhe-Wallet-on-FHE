@@ -1,16 +1,4 @@
-.import-container {
-  width: 393px;
-  height: 814px;
-  background-color: #F3F4F6;
-  display: flex;
-  flex-direction: column; /* İçerikleri dikey hizala */
-  align-items: center; /* Yatayda ortala */
-  justify-content: center; /* Dikeyde ortala */
- 
-  overflow: hidden !important;
-  transform: scale(0.85); /* İçeriği %95 oranında küçült */
-  transform-origin: top center;
-}
+
 
 .header5{
   flex-direction: column;
@@ -29,6 +17,9 @@
   font-size: 16px;
   padding: 10px;
   outline: none;
+  position: relative;
+  top: 146px;
+  
 }
 
 .seed-input {
@@ -41,4 +32,12 @@
   padding: 10px;
   outline: none;
   margin: 20px auto;
+  position: relative;
+  top: 145px;
 }
+
+.import-wallet-button  {
+position: relative;
+top: 143px;
+}
+

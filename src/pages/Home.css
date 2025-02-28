@@ -1,16 +1,4 @@
-/* 📌 Sayfa Boyutunu Sabitle */
-.dashboard-container {
-  width: 393px;
-  height: 814px;
-  background-color: #F3F4F6;
-  display: flex;
-  flex-direction: column; /* İçerikleri dikey hizala */
-  align-items: center; /* Yatayda ortala */
-  justify-content: center; /* Dikeyde ortala */
-  overflow: hidden !important;
-  transform: scale(0.85); /* İçeriği %95 oranında küçült */
-  transform-origin: top center;
-}
+
 
 /* 📌 Üst Kısım */
 .top-section {
@@ -163,19 +151,4 @@
 }
 
 
-/* 📌 Alt Menü */
-.bottom-menu {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 70px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: white;
-  padding: 10px;
-  border-radius: 12px 12px 0 0;
-  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
-}
 

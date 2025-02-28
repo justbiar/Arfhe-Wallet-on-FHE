@@ -12,7 +12,7 @@ const CreateWith12Word = () => {
   ];
 
   return (
-    <div className="app-container">
+    <div className="container">
       <div>
         <h2 className="header12"> 12 Kelime</h2>
         <div className="word-container">
@@ -22,9 +22,10 @@ const CreateWith12Word = () => {
             </div>
           ))}
         </div>
-        <CreateWith12toImport />
-        <BackButton />
+        
       </div>
+      <CreateWith12toImport />
+      <BackButton />
     </div>
   );
 };

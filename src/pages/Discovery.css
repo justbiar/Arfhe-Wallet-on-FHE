@@ -1,20 +1,4 @@
-/* Sayfa genel düzeni */
-.container {
-    width: 393px;
-    height: 814px !important;
-    background-color: #f3f4f6;
-    padding-bottom: 100px;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    box-sizing: border-box;
-    overflow: hidden !important;
-    transform: scale(0.85); /* İçeriği %95 oranında küçült */
-    transform-origin: top center;
-  }
-  .discovery-logo{
+.discovery-logo{
     position: absolute;
   top: 25px;
   left: 185px;

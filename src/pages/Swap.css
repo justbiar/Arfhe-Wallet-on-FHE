@@ -1,16 +1,4 @@
-/* Genel Konteyner */
-.swap-container {
-  width: 393px;
-  height: 814px;
-  background-color: #F3F4F6;
-  display: flex;
-  flex-direction: column; /* İçerikleri dikey hizala */
-  align-items: center; /* Yatayda ortala */
-  justify-content: center; /* Dikeyde ortala */
-  overflow: hidden !important;
-  transform: scale(0.85); /* İçeriği %95 oranında küçült */
-  transform-origin: top center;
-  }
+
   .swap-logo{
     position: absolute;
   top: 160px;

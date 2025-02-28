@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import Bottommenu from "../components/menu/Bottommenu";
 import "./Account.css";
-import ImportWalletButton from "../components/button/Importwalletbutton";
+import { Link } from "react-router-dom";
+
 
 const Account = () => {
   const [accounts, setAccounts] = useState(["Hesap 1", "Hesap 2"]); // Başlangıçta 2 hesap olsun
@@ -23,7 +24,7 @@ const Account = () => {
   };
 
   return (
-    <div className="wallet-container">
+    <div className="container">
       <h2>Ağ</h2>
       <div className="network-select">
         <input type="text" value="Bitcoin" readOnly />
@@ -50,17 +51,18 @@ const Account = () => {
       </div>
 
       <div className="actions">
+      
         <button
           className="primary-button"
           onClick={addAccount}
-          disabled={accounts.length >= 6}
-        >
-          Cüzdan Oluştur
-        </button>
-
-        <ImportWalletButton />
+          disabled={accounts.length >= 6}>Cüzdan Oluştur</button>
+      
+      <div> 
+      <Link to='importwallet'>
+      <button className='import-button-account'>Cüzdan İçe Aktar</button></Link>
       </div>
-
+      </div>
+      
       <div className="bottom-nav">
         <Bottommenu />
       </div>

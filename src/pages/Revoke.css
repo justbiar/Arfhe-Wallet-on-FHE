@@ -1,19 +1,4 @@
-/* Genel sayfa düzeni */
-.container {
-    width: 393px;
-  height: 814px !important;
-  background-color: #f3f4f6;
-  padding-bottom: 100px;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  box-sizing: border-box;
-  overflow: hidden !important;
-  transform: scale(0.85); /* İçeriği %95 oranında küçült */
-  transform-origin: top center;
-  }
+
   
   /* Üst kısım (ikon) */
   .header4 {
@@ -74,17 +59,17 @@
     cursor: pointer;
   }
   
-  /* Büyük detay kutusu 
+  
   .contract-detail {
-    width: 100%;
-    padding: 15px;
+    width: 90%;
+    padding: 10px;
     background-color: white;
-    border: 2px solid #ff0000;
+    border: 1px solid #ccc;
     border-radius: 8px;
-    box-shadow: 2px 2px 5px rgba(255, 0, 0, 0.2);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin-top: 10px;
-  }*/
+  }
   
   .highlight-address {
     color: red;

@@ -5,11 +5,10 @@
   align-items: center !important;
   width: 359px !important; /* Cüzdanın genişliğine uyum sağlasın */
   height: 80px !important;
-  position: absolute;
+  position: fixed !important;
   bottom: 1% !important; /* Cüzdanın en altına sabitle */
-  left: 25px !important;
   background-color: #F3F4F6 !important;
   border: 1px solid black !important;
- 
+
   
 }
