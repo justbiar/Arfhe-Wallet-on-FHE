@@ -38,9 +38,7 @@ body{
   font-weight: bold;
 }
 
-/* Butonlar */
-.create-button{
-  margin-top: 12px;
+.create-24-buttonimport {
   width: 215px;
   height: 39.1px;
   background-color: #003C9D;
@@ -53,8 +51,10 @@ body{
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s ease;
+  margin: 20px;
+  position: relative !important;
+  top: 15px !important;
 }
-
 
 .create-button:hover{
   background-color: #091a5d;

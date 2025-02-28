@@ -1,4 +1,12 @@
- 
+
+.header51{
+  flex-direction: column;
+  padding: 0px !important;
+  background-color: #F3F4F6 !important;
+  position: fixed !important;
+  top: 50px !important;
+
+} 
   .password-input {
     width: 340px;
     height: 40px;
@@ -26,7 +34,7 @@
     transition: background-color 0.3s ease;
     margin: 20px;
     position: relative;
-    top: 120px;
+    top: 112px;
   }
 .login-import-btn {
   width: 340px;

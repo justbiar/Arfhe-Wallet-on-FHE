@@ -6,12 +6,12 @@
     background-color: #F3F4F6 !important;
     flex-direction: column;
     position: absolute;
-    top: 1px;
+    top: 50px;
   }
   
   .app-logo {
     object-fit: cover !important;
-    width: 200px;
+    width: 300px !important;
     height: auto;
     margin-left: 5%;
     margin-bottom: 50px;

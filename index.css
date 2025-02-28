@@ -12,5 +12,13 @@
     box-sizing: border-box !important;
     max-width: 100% !important;
     
-   
+       
+  }
+  #root {
+  position: fixed;
+  top:0px !important;
+  left: 0px !important;
+  width: 325px;
+  height: 695px!important;
+  
   }

@@ -9,6 +9,9 @@
     overflow: hidden !important;
     transform: scale(0.72); /* İçeriği %95 oranında küçült */
     transform-origin: top center;
+    position: fixed;
+    left: -25px !important;
+    top: 15px !important;
   }
   
   h2 {
