@@ -1,3 +1,13 @@
+
+
+.header5{
+  flex-direction: column;
+  padding: 0px !important;
+  background-color: #F3F4F6 !important;
+  position: absolute;
+  top: 50px;
+
+}
 .privatekey-input {
   width: 340px;
   height: 40px;
@@ -7,6 +17,9 @@
   font-size: 16px;
   padding: 10px;
   outline: none;
+  position: relative;
+  top: 146px;
+  
 }
 
 .seed-input {
@@ -19,4 +32,12 @@
   padding: 10px;
   outline: none;
   margin: 20px auto;
+  position: relative;
+  top: 145px;
 }
+
+.import-wallet-button  {
+position: relative;
+top: 143px;
+}
+

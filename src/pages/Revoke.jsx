@@ -14,7 +14,7 @@ const Revoke = () => {
   return (
     <div className="container">
       {/* Üstteki icon */}
-      <header className="header">
+      <header className="header4">
         <div className="logo">⚖️</div>
       </header>
 

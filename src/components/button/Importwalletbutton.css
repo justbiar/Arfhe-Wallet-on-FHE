@@ -12,6 +12,7 @@
     justify-content: center;
     transition: background-color 0.3s ease;
     margin: 20px;
+
 }
 .import-wallet-button:hover {
     background-color: #002F7A;

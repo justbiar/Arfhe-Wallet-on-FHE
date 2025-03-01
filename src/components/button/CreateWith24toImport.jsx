@@ -1,6 +1,6 @@
 import React from "react"; 
 import { useNavigate } from "react-router-dom";
-import App from "../../App";
+
 
 function CreateWith24toImport (){
     const navigate = useNavigate();
@@ -8,11 +8,11 @@ function CreateWith24toImport (){
 return (
    <div>
        
-<button className='create-24-button'
+<button className='create-24-buttonimport'
 onClick={() => {
    navigate('/createwallet/createwith24/importwallet')
 }}
->Cüzdan Oluşturr</button>
+>Cüzdan Oluştur</button>
    </div>
 )
 

@@ -29,10 +29,10 @@ const History = () => {
     <img src="/history2.png" alt='Logo' className='history-logo' />
     </div>
 
-      {/* Alt Menü */}
-      <div>
-        <Bottommenu/>
-      </div>
+     
+    
+     
+    <Bottommenu/>  
     </div>
   );
 };

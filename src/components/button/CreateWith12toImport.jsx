@@ -12,7 +12,7 @@ return (
 onClick={() => {
    navigate('/createwallet/createwith12/importwallet')
 }}
->Cüzdan Oluşturr</button>
+>Cüzdan Oluştur</button>
    </div>
 )
 

@@ -5,7 +5,7 @@ import Bottommenu from "../components/menu/Bottommenu";
 
 const SendScreen = () => {
   return (
-    <div className="app-container">
+    <div className="container">
       <label>Alıcı adres</label>
       <input type="text" placeholder=" 0xa25g5de5g451vvvd75q5frru5kdf5h5lDhrr"/>
 

@@ -12,6 +12,9 @@
     justify-content: center;
     transition: background-color 0.3s ease;
     margin: 20px;
+    position: fixed !important;
+    top: 750px !important;
+    left: 18% !important;
 }
 .back-button:hover {
     background-color: #002F7A;

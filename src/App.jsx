@@ -51,6 +51,7 @@ function App() {
         <Route path='/sending' element={<Sending/>} exact/>
         <Route path='/swap' element={<Swap/>} exact />
         <Route path='/importwallet' element={<ImportWallet/>} exact />
+        <Route path='/account/importwallet' element={<ImportWallet/>} exact />
         <Route path='/createwallet/createwith12' element={<CreateWith12Word/>} exact />
         <Route path='/createwallet/createwith24' element={<CreateWith24Word/>} exact />
         <Route path='/createwallet/createwith12/importwallet' element={<ImportWallet />} exact />

@@ -1,27 +1,12 @@
 
-.login-container {
-  all: unset;
-  width: 393px;
-  height: 814px;
-  background-color: #F3F4F6;
-  display: flex;
-  flex-direction: column; /* İçerikleri dikey hizala */
-  align-items: center; /* Yatayda ortala */
-  justify-content: center; /* Dikeyde ortala */
-  border-radius: 43px;
+.header51{
+  flex-direction: column;
+  padding: 0px !important;
+  background-color: #F3F4F6 !important;
+  position: fixed !important;
+  top: 50px !important;
 
-}
-.passwordreplay-input {
-    width: 340px;
-    height: 40px;
-    background-color: #F3F4F6;
-    border: 2px solid #003C9D;
-    border-radius: 23.5px;
-    font-size: 16px;
-    padding: 10px;
-    outline: none;
-  }
-  
+} 
   .password-input {
     width: 340px;
     height: 40px;
@@ -48,6 +33,8 @@
     justify-content: center;
     transition: background-color 0.3s ease;
     margin: 20px;
+    position: relative;
+    top: 112px;
   }
 .login-import-btn {
   width: 340px;
@@ -58,4 +45,25 @@
   font-size: 16px;
   padding: 10px;
   outline: none;
+}
+
+.back-button-login {
+  width: 215px !important;
+  height: 39.1px !important;
+  background-color: #003C9D !important;
+  border: none !important;
+  border-radius: 23.5px !important;
+  color: white !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 20px !important ;
+  font-weight: 600 !important; /* Semi-Bold */
+  align-items: center !important;
+  justify-content: center !important;
+  transition: background-color 0.3s ease !important;
+  margin: 20px !important;
+  position: relative;
+  top: 105px;
+}
+.back-button-login {
+  background-color: #002F7A !important;
 }

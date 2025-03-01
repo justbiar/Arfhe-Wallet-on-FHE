@@ -34,7 +34,7 @@ function Login() {
   };
 
   return (
-    <div className="login-container">
+    <div className="container">
       <img src="/Arfhe-logo.png" alt='Logo' className='app-logo' />
       <h2>Şifre Giriniz</h2>
       <input
@@ -45,7 +45,13 @@ function Login() {
         onChange={(e) => setInputPassword(e.target.value)}
       />
       <button onClick={handleLogin} className='login-btn'>Giriş Yap</button>
-      <BackButton />
+      <button onClick={() => {
+    if (window.history.state && window.history.state.idx > 0) {
+      navigate(-1);
+    } else {
+      navigate("/", { replace: true });
+    }
+    }}className='back-button-login'>Geri</button>
     </div>
     
   );
