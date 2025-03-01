@@ -2,22 +2,22 @@
 body{
   font-family: sans-serif;
 }
-.app-container {
-  width: 393px;
-  height: 814px;
-  background-color: #F3F4F6;
-  border-radius: 43px;
+
+.container {
+  display: flex !important;
+  flex-direction: column !important; /* İçerikleri dikey hizala */
+  align-items: center !important; /* Yatayda ortala */
+  justify-content: center !important; /* Dikeyde ortala */
+
 }
-  
-  
-  
   /* Başlık */
-  .header {
+  .header12 {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 16px;
-    align-items: center; /* Yatayda ortala */
-    justify-content: center; /* Dikeyde ortala */
+    position: relative;
+    top: -130px;
+    left: 110px;
     
   }
   
@@ -43,4 +43,9 @@ body{
     margin-top: 0%;
   }
   
-  
+  .create-to-import-button {
+position: relative;
+top: 150px;
+
+
+}

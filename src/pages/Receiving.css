@@ -1,21 +1,12 @@
-/* Sayfa Boyutu Sabit */
-.deposit-container {
-    width: 393px;  /* Sabit genişlik */
-    height: 814px; /* Sabit yükseklik */
-    background-color: #f2f2f2;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    overflow: hidden; /* Taşan içerikleri gizler */
-  }
+
   
   /* Üst Bilgi Alanı */
   .info-section {
     width: 50%;
     text-align: center;
     margin-top: 20px;
+    position: fixed;
+    top: 10px;
   }
   
   .info-badge {
@@ -43,6 +34,8 @@
     padding: 10px;
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 30px;
   }
   
   .qr-code {
@@ -62,24 +55,7 @@
     margin-top: 20px;
     width: 80%;
     position: absolute;
-    top: 60%;
+    top: 55%;
   }
   
-  /* Alt Menü */
-  .bottom-menu {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    background-color: white;
-    padding: 10px;
-    border-radius: 12px;
-  }
-  
-  .menu-btn {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-  }
+

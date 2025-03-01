@@ -13,8 +13,8 @@ function App() {
   return (
     <>
     
-    <div className="app-container">
-      <div className='header'>
+    <div className="container">
+      <div className='header1'>
       <h1 className="app-title">Arfhe Wallet</h1>
     <img src="/Arfhe-logo.png" alt='Logo' className='app-logo' />
       
